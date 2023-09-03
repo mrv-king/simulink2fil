@@ -1,0 +1,185 @@
+
+
+================================================================
+== Synthesis Summary Report of 'fpga_test_initialize'
+================================================================
++ General Information: 
+    * Date:           Thu Aug 31 17:42:02 2023
+    * Version:        2023.1 (Build 3854077 on May  4 2023)
+    * Project:        FIL
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: artix7
+    * Target device:  xc7a100t-csg324-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +------------------------+------+----------+---------+-----------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+    |         Modules        | Issue|          | Latency |  Latency  | Iteration|         | Trip |          |      |    |           |           |     |
+    |         & Loops        | Type |   Slack  | (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined| BRAM | DSP|     FF    |    LUT    | URAM|
+    +------------------------+------+----------+---------+-----------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+    |+ fpga_test_initialize  |     -|  36495.82|       14|  7.000e+05|         -|       15|     -|        no|     -|   -|  235 (~0%)|  410 (~0%)|    -|
+    | o init_1               |     -|  36500.00|        8|  4.000e+05|         4|        -|     2|        no|     -|   -|          -|          -|    -|
+    |  o init_2              |     -|  36500.00|        2|  1.000e+05|         1|        -|     2|        no|     -|   -|          -|          -|    -|
+    +------------------------+------+----------+---------+-----------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AP_MEMORY
++------------------------------------------+-----------+----------+
+| Port                                     | Direction | Bitwidth |
++------------------------------------------+-----------+----------+
+| p_fpga_test_B_StateSpace_o1_address0     | out       | 1        |
+| p_fpga_test_B_StateSpace_o1_address1     | out       | 1        |
+| p_fpga_test_B_StateSpace_o1_d0           | out       | 64       |
+| p_fpga_test_B_StateSpace_o1_d1           | out       | 64       |
+| p_fpga_test_DW_StateSpace_IWORK_address0 | out       | 4        |
+| p_fpga_test_DW_StateSpace_IWORK_address1 | out       | 4        |
+| p_fpga_test_DW_StateSpace_IWORK_d0       | out       | 32       |
+| p_fpga_test_DW_StateSpace_IWORK_d1       | out       | 32       |
++------------------------------------------+-----------+----------+
+
+* Other Ports
++-----------------------------------+--------+-----------+----------+
+| Port                              | Mode   | Direction | Bitwidth |
++-----------------------------------+--------+-----------+----------+
+| p_fpga_test_B_AC                  | ap_vld | out       | 32       |
+| p_fpga_test_B_DataTypeConversion1 | ap_vld | out       | 8        |
+| p_fpga_test_B_DataTypeConversion2 | ap_vld | out       | 64       |
+| p_fpga_test_B_Derivative          | ap_vld | out       | 64       |
+| p_fpga_test_B_IC                  | ap_vld | out       | 64       |
+| p_fpga_test_B_LookUpTable         | ap_vld | out       | 64       |
+| p_fpga_test_B_StateSpace_o2       | ap_vld | out       | 64       |
+| p_fpga_test_DW_DelayTs_DSTATE     | ap_vld | out       | 64       |
+| p_fpga_test_DW_DelayTs_DSTATE_f   | ap_vld | out       | 64       |
+| p_fpga_test_DW_IC_FirstOutputTime | ap_vld | out       | 64       |
+| p_fpga_test_DW_LastUAtTimeA       | ap_vld | out       | 64       |
+| p_fpga_test_DW_LastUAtTimeB       | ap_vld | out       | 64       |
+| p_fpga_test_DW_StateSpace_PWORK   | ap_vld | out       | 832      |
+| p_fpga_test_DW_TimeStampA         | ap_vld | out       | 64       |
+| p_fpga_test_DW_TimeStampB         | ap_vld | out       | 64       |
+| p_fpga_test_DW_u5_Mode            | ap_vld | out       | 8        |
+| p_fpga_test_M                     | ap_vld | out       | 520      |
++-----------------------------------+--------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++---------------+-----------+----------------------+
+| Argument      | Direction | Datatype             |
++---------------+-----------+----------------------+
+| _fpga_test_B  | out       | pointer              |
+| _fpga_test_DW | out       | pointer              |
+| _fpga_test_M  | out       | tag_RTM_fpga_test_T* |
++---------------+-----------+----------------------+
+
+* SW-to-HW Mapping
++---------------+------------------------------------------+---------+----------+
+| Argument      | HW Interface                             | HW Type | HW Usage |
++---------------+------------------------------------------+---------+----------+
+| _fpga_test_B  | p_fpga_test_B_AC                         | port    |          |
+| _fpga_test_B  | p_fpga_test_B_AC_ap_vld                  | port    |          |
+| _fpga_test_B  | p_fpga_test_B_StateSpace_o1_address0     | port    | offset   |
+| _fpga_test_B  | p_fpga_test_B_StateSpace_o1_ce0          | port    |          |
+| _fpga_test_B  | p_fpga_test_B_StateSpace_o1_we0          | port    |          |
+| _fpga_test_B  | p_fpga_test_B_StateSpace_o1_d0           | port    |          |
+| _fpga_test_B  | p_fpga_test_B_StateSpace_o1_address1     | port    | offset   |
+| _fpga_test_B  | p_fpga_test_B_StateSpace_o1_ce1          | port    |          |
+| _fpga_test_B  | p_fpga_test_B_StateSpace_o1_we1          | port    |          |
+| _fpga_test_B  | p_fpga_test_B_StateSpace_o1_d1           | port    |          |
+| _fpga_test_B  | p_fpga_test_B_StateSpace_o2              | port    |          |
+| _fpga_test_B  | p_fpga_test_B_StateSpace_o2_ap_vld       | port    |          |
+| _fpga_test_B  | p_fpga_test_B_DataTypeConversion2        | port    |          |
+| _fpga_test_B  | p_fpga_test_B_DataTypeConversion2_ap_vld | port    |          |
+| _fpga_test_B  | p_fpga_test_B_LookUpTable                | port    |          |
+| _fpga_test_B  | p_fpga_test_B_LookUpTable_ap_vld         | port    |          |
+| _fpga_test_B  | p_fpga_test_B_IC                         | port    |          |
+| _fpga_test_B  | p_fpga_test_B_IC_ap_vld                  | port    |          |
+| _fpga_test_B  | p_fpga_test_B_Derivative                 | port    |          |
+| _fpga_test_B  | p_fpga_test_B_Derivative_ap_vld          | port    |          |
+| _fpga_test_B  | p_fpga_test_B_DataTypeConversion1        | port    |          |
+| _fpga_test_B  | p_fpga_test_B_DataTypeConversion1_ap_vld | port    |          |
+| _fpga_test_DW | p_fpga_test_DW_DelayTs_DSTATE            | port    |          |
+| _fpga_test_DW | p_fpga_test_DW_DelayTs_DSTATE_ap_vld     | port    |          |
+| _fpga_test_DW | p_fpga_test_DW_DelayTs_DSTATE_f          | port    |          |
+| _fpga_test_DW | p_fpga_test_DW_DelayTs_DSTATE_f_ap_vld   | port    |          |
+| _fpga_test_DW | p_fpga_test_DW_IC_FirstOutputTime        | port    |          |
+| _fpga_test_DW | p_fpga_test_DW_IC_FirstOutputTime_ap_vld | port    |          |
+| _fpga_test_DW | p_fpga_test_DW_TimeStampA                | port    |          |
+| _fpga_test_DW | p_fpga_test_DW_TimeStampA_ap_vld         | port    |          |
+| _fpga_test_DW | p_fpga_test_DW_LastUAtTimeA              | port    |          |
+| _fpga_test_DW | p_fpga_test_DW_LastUAtTimeA_ap_vld       | port    |          |
+| _fpga_test_DW | p_fpga_test_DW_TimeStampB                | port    |          |
+| _fpga_test_DW | p_fpga_test_DW_TimeStampB_ap_vld         | port    |          |
+| _fpga_test_DW | p_fpga_test_DW_LastUAtTimeB              | port    |          |
+| _fpga_test_DW | p_fpga_test_DW_LastUAtTimeB_ap_vld       | port    |          |
+| _fpga_test_DW | p_fpga_test_DW_StateSpace_PWORK          | port    |          |
+| _fpga_test_DW | p_fpga_test_DW_StateSpace_PWORK_ap_vld   | port    |          |
+| _fpga_test_DW | p_fpga_test_DW_StateSpace_IWORK_address0 | port    | offset   |
+| _fpga_test_DW | p_fpga_test_DW_StateSpace_IWORK_ce0      | port    |          |
+| _fpga_test_DW | p_fpga_test_DW_StateSpace_IWORK_we0      | port    |          |
+| _fpga_test_DW | p_fpga_test_DW_StateSpace_IWORK_d0       | port    |          |
+| _fpga_test_DW | p_fpga_test_DW_StateSpace_IWORK_address1 | port    | offset   |
+| _fpga_test_DW | p_fpga_test_DW_StateSpace_IWORK_ce1      | port    |          |
+| _fpga_test_DW | p_fpga_test_DW_StateSpace_IWORK_we1      | port    |          |
+| _fpga_test_DW | p_fpga_test_DW_StateSpace_IWORK_d1       | port    |          |
+| _fpga_test_DW | p_fpga_test_DW_u5_Mode                   | port    |          |
+| _fpga_test_DW | p_fpga_test_DW_u5_Mode_ap_vld            | port    |          |
+| _fpga_test_M  | p_fpga_test_M                            | port    |          |
+| _fpga_test_M  | p_fpga_test_M_ap_vld                     | port    |          |
++---------------+------------------------------------------+---------+----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++------------------------+-----+--------+----------+-----+--------+---------+
+| Name                   | DSP | Pragma | Variable | Op  | Impl   | Latency |
++------------------------+-----+--------+----------+-----+--------+---------+
+| + fpga_test_initialize | 0   |        |          |     |        |         |
+|   add_ln90_fu_463_p2   | -   |        | add_ln90 | add | fabric | 0       |
+|   add_ln91_fu_479_p2   | -   |        | add_ln91 | add | fabric | 0       |
++------------------------+-----+--------+----------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++--------------+--------------------------+----------------------------------------------------------+
+| Type         | Options                  | Location                                                 |
++--------------+--------------------------+----------------------------------------------------------+
+| inline       | off                      | fpga_test_grt_rtw/fpga_test.c:48 in fpga_test_initialize |
+| pipeline     | off                      | fpga_test_grt_rtw/fpga_test.c:49 in fpga_test_initialize |
+| disaggregate | variable = _fpga_test_B  | fpga_test_grt_rtw/fpga_test.c:50 in fpga_test_initialize |
+| disaggregate | variable = _fpga_test_DW | fpga_test_grt_rtw/fpga_test.c:51 in fpga_test_initialize |
+| disaggregate | variable = _fpga_test_M  | fpga_test_grt_rtw/fpga_test.c:52 in fpga_test_initialize |
+| disaggregate | variable = _fpga_test_B  | fpga_test_grt_rtw/fpga_test.c:128 in fpga_test_step      |
+| disaggregate | variable = fpga_test_B   | fpga_test_grt_rtw/fpga_test.c:129 in fpga_test_step      |
+| disaggregate | variable = _fpga_test_DW | fpga_test_grt_rtw/fpga_test.c:130 in fpga_test_step      |
+| disaggregate | variable = fpga_test_DW  | fpga_test_grt_rtw/fpga_test.c:131 in fpga_test_step      |
+| disaggregate | variable = fpga_test_M   | fpga_test_grt_rtw/fpga_test.c:132 in fpga_test_step      |
+| inline       | off                      | fpga_test_grt_rtw/fpga_test.c:149 in fpga_test_step      |
+| pipeline     | off                      | fpga_test_grt_rtw/fpga_test.c:150 in fpga_test_step      |
++--------------+--------------------------+----------------------------------------------------------+
+
+

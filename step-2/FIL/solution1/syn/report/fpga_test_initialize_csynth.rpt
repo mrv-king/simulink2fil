@@ -1,0 +1,204 @@
+
+
+================================================================
+== Vitis HLS Report for 'fpga_test_initialize'
+================================================================
+* Date:           Thu Aug 31 17:42:02 2023
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        FIL
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a100t-csg324-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  50.00 us|  4.181 ns|    13.50 us|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       14|       14|  0.700 ms|  0.700 ms|   15|   15|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------+---------+---------+----------+-----------+-----------+------+----------+
+        |           |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-----------+---------+---------+----------+-----------+-----------+------+----------+
+        |- init_1   |        8|        8|         4|          -|          -|     2|        no|
+        | + init_2  |        2|        2|         1|          -|          -|     2|        no|
+        +-----------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    265|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|    145|    -|
+|Register         |        -|    -|     235|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|     235|    410|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      270|  240|  126800|  63400|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------------------+----------+----+---+----+------------+------------+
+    |                 Variable Name                | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------------------+----------+----+---+----+------------+------------+
+    |add_ln90_fu_463_p2                            |         +|   0|  0|  10|           2|           1|
+    |add_ln91_fu_479_p2                            |         +|   0|  0|  10|           2|           1|
+    |icmp_ln90_fu_457_p2                           |      icmp|   0|  0|  11|           2|           3|
+    |icmp_ln91_fu_473_p2                           |      icmp|   0|  0|  11|           2|           3|
+    |icmp_ln9_1_fu_510_p2                          |      icmp|   0|  0|  10|           2|           1|
+    |icmp_ln9_2_fu_516_p2                          |      icmp|   0|  0|  11|           2|           3|
+    |icmp_ln9_fu_496_p2                            |      icmp|   0|  0|  10|           2|           1|
+    |empty_8_fu_530_p2                             |        or|   0|  0|   2|           1|           1|
+    |fpga_test_DW_StateSpace_PWORK_DS_0_fu_536_p3  |    select|   0|  0|  64|           1|          64|
+    |select_ln9_1_i_fu_522_p3                      |    select|   0|  0|  62|           1|          62|
+    |select_ln9_fu_502_p3                          |    select|   0|  0|  64|           1|          64|
+    +----------------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                         |          |   0|  0| 265|          18|         204|
+    +----------------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------------------------------------+----+-----------+-----+-----------+
+    |                     Name                    | LUT| Input Size| Bits| Total Bits|
+    +---------------------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                                    |  37|          9|    1|          9|
+    |fpga_test_DW_StateSpace_PWORK_DS_3_1_fu_132  |   9|          2|   55|        110|
+    |fpga_test_DW_StateSpace_PWORK_DS_3_2_fu_136  |   9|          2|   55|        110|
+    |fpga_test_DW_StateSpace_PWORK_DS_3_3_fu_140  |   9|          2|   55|        110|
+    |fpga_test_DW_StateSpace_PWORK_DS_3_fu_128    |   9|          2|   55|        110|
+    |i_fu_124                                     |   9|          2|    2|          4|
+    |j_reg_418                                    |   9|          2|    2|          4|
+    |p_fpga_test_DW_StateSpace_IWORK_address0     |  29|          7|    4|         28|
+    |p_fpga_test_DW_StateSpace_IWORK_address1     |  25|          6|    4|         24|
+    +---------------------------------------------+----+-----------+-----+-----------+
+    |Total                                        | 145|         34|  233|        509|
+    +---------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------------------------+----+----+-----+-----------+
+    |                     Name                    | FF | LUT| Bits| Const Bits|
+    +---------------------------------------------+----+----+-----+-----------+
+    |add_ln90_reg_660                             |   2|   0|    2|          0|
+    |ap_CS_fsm                                    |   8|   0|    8|          0|
+    |empty_reg_665                                |   1|   0|    1|          0|
+    |fpga_test_DW_StateSpace_PWORK_DS_3_1_fu_132  |  55|   0|   64|          9|
+    |fpga_test_DW_StateSpace_PWORK_DS_3_2_fu_136  |  55|   0|   64|          9|
+    |fpga_test_DW_StateSpace_PWORK_DS_3_3_fu_140  |  55|   0|   64|          9|
+    |fpga_test_DW_StateSpace_PWORK_DS_3_fu_128    |  55|   0|   64|          9|
+    |i_fu_124                                     |   2|   0|    2|          0|
+    |j_reg_418                                    |   2|   0|    2|          0|
+    +---------------------------------------------+----+----+-----+-----------+
+    |Total                                        | 235|   0|  271|         36|
+    +---------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------------------+-----+-----+------------+-----------------------------------+--------------+
+|                 RTL Ports                | Dir | Bits|  Protocol  |           Source Object           |    C Type    |
++------------------------------------------+-----+-----+------------+-----------------------------------+--------------+
+|ap_clk                                    |   in|    1|  ap_ctrl_hs|               fpga_test_initialize|  return value|
+|ap_rst                                    |   in|    1|  ap_ctrl_hs|               fpga_test_initialize|  return value|
+|ap_start                                  |   in|    1|  ap_ctrl_hs|               fpga_test_initialize|  return value|
+|ap_done                                   |  out|    1|  ap_ctrl_hs|               fpga_test_initialize|  return value|
+|ap_idle                                   |  out|    1|  ap_ctrl_hs|               fpga_test_initialize|  return value|
+|ap_ready                                  |  out|    1|  ap_ctrl_hs|               fpga_test_initialize|  return value|
+|p_fpga_test_B_AC                          |  out|   32|      ap_vld|                   p_fpga_test_B_AC|       pointer|
+|p_fpga_test_B_AC_ap_vld                   |  out|    1|      ap_vld|                   p_fpga_test_B_AC|       pointer|
+|p_fpga_test_B_StateSpace_o1_address0      |  out|    1|   ap_memory|        p_fpga_test_B_StateSpace_o1|         array|
+|p_fpga_test_B_StateSpace_o1_ce0           |  out|    1|   ap_memory|        p_fpga_test_B_StateSpace_o1|         array|
+|p_fpga_test_B_StateSpace_o1_we0           |  out|    1|   ap_memory|        p_fpga_test_B_StateSpace_o1|         array|
+|p_fpga_test_B_StateSpace_o1_d0            |  out|   64|   ap_memory|        p_fpga_test_B_StateSpace_o1|         array|
+|p_fpga_test_B_StateSpace_o1_address1      |  out|    1|   ap_memory|        p_fpga_test_B_StateSpace_o1|         array|
+|p_fpga_test_B_StateSpace_o1_ce1           |  out|    1|   ap_memory|        p_fpga_test_B_StateSpace_o1|         array|
+|p_fpga_test_B_StateSpace_o1_we1           |  out|    1|   ap_memory|        p_fpga_test_B_StateSpace_o1|         array|
+|p_fpga_test_B_StateSpace_o1_d1            |  out|   64|   ap_memory|        p_fpga_test_B_StateSpace_o1|         array|
+|p_fpga_test_B_StateSpace_o2               |  out|   64|      ap_vld|        p_fpga_test_B_StateSpace_o2|       pointer|
+|p_fpga_test_B_StateSpace_o2_ap_vld        |  out|    1|      ap_vld|        p_fpga_test_B_StateSpace_o2|       pointer|
+|p_fpga_test_B_DataTypeConversion2         |  out|   64|      ap_vld|  p_fpga_test_B_DataTypeConversion2|       pointer|
+|p_fpga_test_B_DataTypeConversion2_ap_vld  |  out|    1|      ap_vld|  p_fpga_test_B_DataTypeConversion2|       pointer|
+|p_fpga_test_B_LookUpTable                 |  out|   64|      ap_vld|          p_fpga_test_B_LookUpTable|       pointer|
+|p_fpga_test_B_LookUpTable_ap_vld          |  out|    1|      ap_vld|          p_fpga_test_B_LookUpTable|       pointer|
+|p_fpga_test_B_IC                          |  out|   64|      ap_vld|                   p_fpga_test_B_IC|       pointer|
+|p_fpga_test_B_IC_ap_vld                   |  out|    1|      ap_vld|                   p_fpga_test_B_IC|       pointer|
+|p_fpga_test_B_Derivative                  |  out|   64|      ap_vld|           p_fpga_test_B_Derivative|       pointer|
+|p_fpga_test_B_Derivative_ap_vld           |  out|    1|      ap_vld|           p_fpga_test_B_Derivative|       pointer|
+|p_fpga_test_B_DataTypeConversion1         |  out|    8|      ap_vld|  p_fpga_test_B_DataTypeConversion1|       pointer|
+|p_fpga_test_B_DataTypeConversion1_ap_vld  |  out|    1|      ap_vld|  p_fpga_test_B_DataTypeConversion1|       pointer|
+|p_fpga_test_DW_DelayTs_DSTATE             |  out|   64|      ap_vld|      p_fpga_test_DW_DelayTs_DSTATE|       pointer|
+|p_fpga_test_DW_DelayTs_DSTATE_ap_vld      |  out|    1|      ap_vld|      p_fpga_test_DW_DelayTs_DSTATE|       pointer|
+|p_fpga_test_DW_DelayTs_DSTATE_f           |  out|   64|      ap_vld|    p_fpga_test_DW_DelayTs_DSTATE_f|       pointer|
+|p_fpga_test_DW_DelayTs_DSTATE_f_ap_vld    |  out|    1|      ap_vld|    p_fpga_test_DW_DelayTs_DSTATE_f|       pointer|
+|p_fpga_test_DW_IC_FirstOutputTime         |  out|   64|      ap_vld|  p_fpga_test_DW_IC_FirstOutputTime|       pointer|
+|p_fpga_test_DW_IC_FirstOutputTime_ap_vld  |  out|    1|      ap_vld|  p_fpga_test_DW_IC_FirstOutputTime|       pointer|
+|p_fpga_test_DW_TimeStampA                 |  out|   64|      ap_vld|          p_fpga_test_DW_TimeStampA|       pointer|
+|p_fpga_test_DW_TimeStampA_ap_vld          |  out|    1|      ap_vld|          p_fpga_test_DW_TimeStampA|       pointer|
+|p_fpga_test_DW_LastUAtTimeA               |  out|   64|      ap_vld|        p_fpga_test_DW_LastUAtTimeA|       pointer|
+|p_fpga_test_DW_LastUAtTimeA_ap_vld        |  out|    1|      ap_vld|        p_fpga_test_DW_LastUAtTimeA|       pointer|
+|p_fpga_test_DW_TimeStampB                 |  out|   64|      ap_vld|          p_fpga_test_DW_TimeStampB|       pointer|
+|p_fpga_test_DW_TimeStampB_ap_vld          |  out|    1|      ap_vld|          p_fpga_test_DW_TimeStampB|       pointer|
+|p_fpga_test_DW_LastUAtTimeB               |  out|   64|      ap_vld|        p_fpga_test_DW_LastUAtTimeB|       pointer|
+|p_fpga_test_DW_LastUAtTimeB_ap_vld        |  out|    1|      ap_vld|        p_fpga_test_DW_LastUAtTimeB|       pointer|
+|p_fpga_test_DW_StateSpace_PWORK           |  out|  832|      ap_vld|    p_fpga_test_DW_StateSpace_PWORK|       pointer|
+|p_fpga_test_DW_StateSpace_PWORK_ap_vld    |  out|    1|      ap_vld|    p_fpga_test_DW_StateSpace_PWORK|       pointer|
+|p_fpga_test_DW_StateSpace_IWORK_address0  |  out|    4|   ap_memory|    p_fpga_test_DW_StateSpace_IWORK|         array|
+|p_fpga_test_DW_StateSpace_IWORK_ce0       |  out|    1|   ap_memory|    p_fpga_test_DW_StateSpace_IWORK|         array|
+|p_fpga_test_DW_StateSpace_IWORK_we0       |  out|    1|   ap_memory|    p_fpga_test_DW_StateSpace_IWORK|         array|
+|p_fpga_test_DW_StateSpace_IWORK_d0        |  out|   32|   ap_memory|    p_fpga_test_DW_StateSpace_IWORK|         array|
+|p_fpga_test_DW_StateSpace_IWORK_address1  |  out|    4|   ap_memory|    p_fpga_test_DW_StateSpace_IWORK|         array|
+|p_fpga_test_DW_StateSpace_IWORK_ce1       |  out|    1|   ap_memory|    p_fpga_test_DW_StateSpace_IWORK|         array|
+|p_fpga_test_DW_StateSpace_IWORK_we1       |  out|    1|   ap_memory|    p_fpga_test_DW_StateSpace_IWORK|         array|
+|p_fpga_test_DW_StateSpace_IWORK_d1        |  out|   32|   ap_memory|    p_fpga_test_DW_StateSpace_IWORK|         array|
+|p_fpga_test_DW_u5_Mode                    |  out|    8|      ap_vld|             p_fpga_test_DW_u5_Mode|       pointer|
+|p_fpga_test_DW_u5_Mode_ap_vld             |  out|    1|      ap_vld|             p_fpga_test_DW_u5_Mode|       pointer|
+|p_fpga_test_M                             |  out|  520|      ap_vld|                      p_fpga_test_M|       pointer|
+|p_fpga_test_M_ap_vld                      |  out|    1|      ap_vld|                      p_fpga_test_M|       pointer|
++------------------------------------------+-----+-----+------------+-----------------------------------+--------------+
+

@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Aug 31 17:42:32 2023
+# Process ID: 12692
+# Current directory: C:/Users/nikgal/Vitis/fpga_test/FIL/solution1/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: C:/Users/nikgal/Vitis/fpga_test/FIL/solution1/impl/ip/vivado.log
+# Journal file: C:/Users/nikgal/Vitis/fpga_test/FIL/solution1/impl/ip\vivado.jou
+# Running On: DESKTOP-TDOE7A4, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 34064 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+ipx::create_core: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 474.098 ; gain = 192.297
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 31 17:42:41 2023...

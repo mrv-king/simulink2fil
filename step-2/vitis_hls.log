@@ -1,0 +1,62 @@
+ECHO is off.
+ECHO is off.
+NOTE: Using modified tcl85t.dll from https://gitenterprise.xilinx.com/ACT/vitis_hls_tcl
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2023.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'nikgal' on host 'desktop-tdoe7a4' (Windows NT_amd64 version 6.2) on Thu Aug 31 17:42:29 +0200 2023
+INFO: [HLS 200-10] In directory 'C:/Users/nikgal/Vitis/fpga_test'
+Sourcing Tcl script 'C:/Users/nikgal/Vitis/fpga_test/FIL/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: source C:/Users/nikgal/Vitis/fpga_test/FIL/solution1/export.tcl
+INFO: [HLS 200-1510] Running: open_project FIL 
+INFO: [HLS 200-10] Opening project 'C:/Users/nikgal/Vitis/fpga_test/FIL'.
+INFO: [HLS 200-1510] Running: set_top fpga_test_initialize 
+INFO: [HLS 200-1510] Running: add_files fpga_test_grt_rtw/fpga_test.c -cflags -IC:/Xilinx/Vitis_HLS/2023.1/simulink_include 
+INFO: [HLS 200-10] Adding design file 'fpga_test_grt_rtw/fpga_test.c' to the project
+INFO: [HLS 200-1510] Running: add_files fpga_test_grt_rtw/fpga_test.h 
+INFO: [HLS 200-10] Adding design file 'fpga_test_grt_rtw/fpga_test.h' to the project
+INFO: [HLS 200-1510] Running: add_files fpga_test_grt_rtw/fpga_test_data.c -cflags -IC:/Xilinx/Vitis_HLS/2023.1/simulink_include 
+INFO: [HLS 200-10] Adding design file 'fpga_test_grt_rtw/fpga_test_data.c' to the project
+INFO: [HLS 200-1510] Running: add_files fpga_test_grt_rtw/fpga_test_types.h 
+INFO: [HLS 200-10] Adding design file 'fpga_test_grt_rtw/fpga_test_types.h' to the project
+INFO: [HLS 200-1510] Running: add_files ../../../../Xilinx/Vitis_HLS/2023.1/simulink_include/rtGetInf.c -cflags -IC:/Xilinx/Vitis_HLS/2023.1/simulink_include 
+INFO: [HLS 200-10] Adding design file '../../../../Xilinx/Vitis_HLS/2023.1/simulink_include/rtGetInf.c' to the project
+INFO: [HLS 200-1510] Running: add_files ../../../../Xilinx/Vitis_HLS/2023.1/simulink_include/rtGetNaN.c -cflags -IC:/Xilinx/Vitis_HLS/2023.1/simulink_include 
+INFO: [HLS 200-10] Adding design file '../../../../Xilinx/Vitis_HLS/2023.1/simulink_include/rtGetNaN.c' to the project
+INFO: [HLS 200-1510] Running: add_files fpga_test_grt_rtw/rt_look.c -cflags -IC:/Xilinx/Vitis_HLS/2023.1/simulink_include 
+INFO: [HLS 200-10] Adding design file 'fpga_test_grt_rtw/rt_look.c' to the project
+INFO: [HLS 200-1510] Running: add_files fpga_test_grt_rtw/rt_look1d.c -cflags -IC:/Xilinx/Vitis_HLS/2023.1/simulink_include 
+INFO: [HLS 200-10] Adding design file 'fpga_test_grt_rtw/rt_look1d.c' to the project
+INFO: [HLS 200-1510] Running: add_files ../../../../Xilinx/Vitis_HLS/2023.1/simulink_include/rt_nonfinite.c -cflags -IC:/Xilinx/Vitis_HLS/2023.1/simulink_include 
+INFO: [HLS 200-10] Adding design file '../../../../Xilinx/Vitis_HLS/2023.1/simulink_include/rt_nonfinite.c' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'C:/Users/nikgal/Vitis/fpga_test/FIL/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 50000ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a100t-csg324-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/nikgal/Vivado/fpga_model/fil_init
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7a100t-csg324-1 
+INFO: [HLS 200-1510] Running: create_clock -period 50000 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output C:/Users/nikgal/Vivado/fpga_model/fil_init -rtl verilog 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output C:/Users/nikgal/Vivado/fpga_model/fil_init 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+ipx::create_core: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 474.098 ; gain = 192.297
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 31 17:42:41 2023...
+INFO: [HLS 200-802] Generated output file C:/Users/nikgal/Vivado/fpga_model/fil_init.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 11.409 seconds; current allocated memory: 8.027 MB.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 12.646 seconds; peak allocated memory: 94.957 MB.

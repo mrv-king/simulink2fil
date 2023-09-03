@@ -1,0 +1,1156 @@
+{
+  "Top": "fpga_test_initialize",
+  "RtlTop": "fpga_test_initialize",
+  "RtlPrefix": "",
+  "RtlSubPrefix": "fpga_test_initialize_",
+  "SourceLanguage": "c",
+  "HostMachineBits": "64",
+  "FunctionProtocol": "ap_ctrl_hs",
+  "ResetStyle": "control",
+  "Target": {
+    "Family": "artix7",
+    "Device": "xc7a100t",
+    "Package": "-csg324",
+    "Speed": "-1",
+    "Triple": "fpga64-xilinx-none"
+  },
+  "Args": {
+    "_fpga_test_B": {
+      "index": "0",
+      "direction": "out",
+      "srcType": "*",
+      "srcSize": "576",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "p_fpga_test_B_AC",
+          "name": "p_fpga_test_B_AC",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_B_AC_ap_vld",
+          "name": "p_fpga_test_B_AC_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_B_StateSpace_o1_address0",
+          "name": "p_fpga_test_B_StateSpace_o1_address0",
+          "usage": "address",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_B_StateSpace_o1_ce0",
+          "name": "p_fpga_test_B_StateSpace_o1_ce0",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_B_StateSpace_o1_we0",
+          "name": "p_fpga_test_B_StateSpace_o1_we0",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_B_StateSpace_o1_d0",
+          "name": "p_fpga_test_B_StateSpace_o1_d0",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_B_StateSpace_o1_address1",
+          "name": "p_fpga_test_B_StateSpace_o1_address1",
+          "usage": "address",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_B_StateSpace_o1_ce1",
+          "name": "p_fpga_test_B_StateSpace_o1_ce1",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_B_StateSpace_o1_we1",
+          "name": "p_fpga_test_B_StateSpace_o1_we1",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_B_StateSpace_o1_d1",
+          "name": "p_fpga_test_B_StateSpace_o1_d1",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_B_StateSpace_o2",
+          "name": "p_fpga_test_B_StateSpace_o2",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_B_StateSpace_o2_ap_vld",
+          "name": "p_fpga_test_B_StateSpace_o2_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_B_DataTypeConversion2",
+          "name": "p_fpga_test_B_DataTypeConversion2",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_B_DataTypeConversion2_ap_vld",
+          "name": "p_fpga_test_B_DataTypeConversion2_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_B_LookUpTable",
+          "name": "p_fpga_test_B_LookUpTable",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_B_LookUpTable_ap_vld",
+          "name": "p_fpga_test_B_LookUpTable_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_B_IC",
+          "name": "p_fpga_test_B_IC",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_B_IC_ap_vld",
+          "name": "p_fpga_test_B_IC_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_B_Derivative",
+          "name": "p_fpga_test_B_Derivative",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_B_Derivative_ap_vld",
+          "name": "p_fpga_test_B_Derivative_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_B_DataTypeConversion1",
+          "name": "p_fpga_test_B_DataTypeConversion1",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_B_DataTypeConversion1_ap_vld",
+          "name": "p_fpga_test_B_DataTypeConversion1_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        }
+      ]
+    },
+    "_fpga_test_DW": {
+      "index": "1",
+      "direction": "out",
+      "srcType": "*",
+      "srcSize": "1664",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "p_fpga_test_DW_DelayTs_DSTATE",
+          "name": "p_fpga_test_DW_DelayTs_DSTATE",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_DW_DelayTs_DSTATE_ap_vld",
+          "name": "p_fpga_test_DW_DelayTs_DSTATE_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_DW_DelayTs_DSTATE_f",
+          "name": "p_fpga_test_DW_DelayTs_DSTATE_f",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_DW_DelayTs_DSTATE_f_ap_vld",
+          "name": "p_fpga_test_DW_DelayTs_DSTATE_f_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_DW_IC_FirstOutputTime",
+          "name": "p_fpga_test_DW_IC_FirstOutputTime",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_DW_IC_FirstOutputTime_ap_vld",
+          "name": "p_fpga_test_DW_IC_FirstOutputTime_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_DW_TimeStampA",
+          "name": "p_fpga_test_DW_TimeStampA",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_DW_TimeStampA_ap_vld",
+          "name": "p_fpga_test_DW_TimeStampA_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_DW_LastUAtTimeA",
+          "name": "p_fpga_test_DW_LastUAtTimeA",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_DW_LastUAtTimeA_ap_vld",
+          "name": "p_fpga_test_DW_LastUAtTimeA_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_DW_TimeStampB",
+          "name": "p_fpga_test_DW_TimeStampB",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_DW_TimeStampB_ap_vld",
+          "name": "p_fpga_test_DW_TimeStampB_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_DW_LastUAtTimeB",
+          "name": "p_fpga_test_DW_LastUAtTimeB",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_DW_LastUAtTimeB_ap_vld",
+          "name": "p_fpga_test_DW_LastUAtTimeB_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_DW_StateSpace_PWORK",
+          "name": "p_fpga_test_DW_StateSpace_PWORK",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_DW_StateSpace_PWORK_ap_vld",
+          "name": "p_fpga_test_DW_StateSpace_PWORK_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_DW_StateSpace_IWORK_address0",
+          "name": "p_fpga_test_DW_StateSpace_IWORK_address0",
+          "usage": "address",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_DW_StateSpace_IWORK_ce0",
+          "name": "p_fpga_test_DW_StateSpace_IWORK_ce0",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_DW_StateSpace_IWORK_we0",
+          "name": "p_fpga_test_DW_StateSpace_IWORK_we0",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_DW_StateSpace_IWORK_d0",
+          "name": "p_fpga_test_DW_StateSpace_IWORK_d0",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_DW_StateSpace_IWORK_address1",
+          "name": "p_fpga_test_DW_StateSpace_IWORK_address1",
+          "usage": "address",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_DW_StateSpace_IWORK_ce1",
+          "name": "p_fpga_test_DW_StateSpace_IWORK_ce1",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_DW_StateSpace_IWORK_we1",
+          "name": "p_fpga_test_DW_StateSpace_IWORK_we1",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_DW_StateSpace_IWORK_d1",
+          "name": "p_fpga_test_DW_StateSpace_IWORK_d1",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_DW_u5_Mode",
+          "name": "p_fpga_test_DW_u5_Mode",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_DW_u5_Mode_ap_vld",
+          "name": "p_fpga_test_DW_u5_Mode_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        }
+      ]
+    },
+    "_fpga_test_M": {
+      "index": "2",
+      "direction": "out",
+      "srcType": "tag_RTM_fpga_test_T*",
+      "srcSize": "576",
+      "hwRefs": [
+        {
+          "type": "port",
+          "interface": "p_fpga_test_M",
+          "name": "p_fpga_test_M",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "p_fpga_test_M_ap_vld",
+          "name": "p_fpga_test_M_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        }
+      ]
+    }
+  },
+  "HlsSolution": {
+    "FlowTarget": "vivado",
+    "ConfigTcl": [
+      "config_export -format=ip_catalog",
+      "config_export -output=C:\/Users\/nikgal\/Vivado\/fpga_model\/fil_init",
+      "config_export -rtl=verilog"
+    ],
+    "ProfileOption": "0",
+    "ProfileType": "none",
+    "KernelName": "fpga_test_initialize"
+  },
+  "ClockInfo": {
+    "ClockName": "ap_clk",
+    "ClockPeriod": "50000",
+    "Uncertainty": "13500",
+    "IsCombinational": "0",
+    "II": "15",
+    "Latency": "14"
+  },
+  "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 50000.000 [get_ports ap_clk]"]},
+  "Ipx": {
+    "Vendor": "xilinx.com",
+    "Library": "hls",
+    "Name": "fpga_test_initialize",
+    "Version": "1.0",
+    "DisplayName": "Fpga_test_initialize",
+    "Revision": "2113187442",
+    "Description": "An IP generated by Vitis HLS",
+    "Taxonomy": "\/VITIS_HLS_IP",
+    "AutoFamilySupport": "",
+    "ZipFile": "xilinx_com_hls_fpga_test_initialize_1_0.zip"
+  },
+  "Files": {
+    "CSource": [
+      "..\/..\/fpga_test_grt_rtw\/fpga_test.c",
+      "..\/..\/fpga_test_grt_rtw\/fpga_test_data.c",
+      "..\/..\/..\/..\/..\/..\/Xilinx\/Vitis_HLS\/2023.1\/simulink_include\/rtGetInf.c",
+      "..\/..\/..\/..\/..\/..\/Xilinx\/Vitis_HLS\/2023.1\/simulink_include\/rtGetNaN.c",
+      "..\/..\/fpga_test_grt_rtw\/rt_look.c",
+      "..\/..\/fpga_test_grt_rtw\/rt_look1d.c",
+      "..\/..\/..\/..\/..\/..\/Xilinx\/Vitis_HLS\/2023.1\/simulink_include\/rt_nonfinite.c"
+    ],
+    "Vhdl": ["impl\/vhdl\/fpga_test_initialize.vhd"],
+    "Verilog": ["impl\/verilog\/fpga_test_initialize.v"],
+    "IpMisc": ["impl\/misc\/logo.png"],
+    "CsynthXml": "syn\/report\/csynth.xml",
+    "DebugDir": ".debug",
+    "KernelXml": ".autopilot\/db\/kernel.internal.xml",
+    "Xo": "",
+    "XoHlsDir": "",
+    "ProtoInst": [
+      ".debug\/fpga_model.protoinst",
+      ".debug\/fpga_test_initialize.protoinst",
+      ".debug\/fpga_test_step.protoinst",
+      ".debug\/main.protoinst"
+    ]
+  },
+  "SubcoreInfo": {
+    "HasXpmMemory": false,
+    "HasClockedDsp": false,
+    "Ip": []
+  },
+  "Interfaces": {
+    "ap_clk": {
+      "type": "clock",
+      "busTypeName": "clock",
+      "mode": "slave",
+      "busParams": {"ASSOCIATED_RESET": "ap_rst"},
+      "portMap": {"ap_clk": "CLK"},
+      "ports": ["ap_clk"]
+    },
+    "ap_rst": {
+      "type": "reset",
+      "busTypeName": "reset",
+      "mode": "slave",
+      "busParams": {"POLARITY": "ACTIVE_HIGH"},
+      "portMap": {"ap_rst": "RST"},
+      "ports": ["ap_rst"]
+    },
+    "ap_ctrl": {
+      "type": "ap_ctrl",
+      "busTypeName": "acc_handshake",
+      "mode": "slave",
+      "portMap": {
+        "ap_start": "start",
+        "ap_done": "done",
+        "ap_idle": "idle",
+        "ap_ready": "ready"
+      },
+      "ports": [
+        "ap_done",
+        "ap_idle",
+        "ap_ready",
+        "ap_start"
+      ]
+    },
+    "p_fpga_test_B_AC": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "32",
+      "portMap": {"p_fpga_test_B_AC": "DATA"},
+      "ports": ["p_fpga_test_B_AC"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "_fpga_test_B"
+        }]
+    },
+    "p_fpga_test_B_StateSpace_o1_address0": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_memory",
+      "mode": "master",
+      "dataWidth": "1",
+      "portMap": {"p_fpga_test_B_StateSpace_o1_address0": "DATA"},
+      "ports": ["p_fpga_test_B_StateSpace_o1_address0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "_fpga_test_B"
+        }]
+    },
+    "p_fpga_test_B_StateSpace_o1_d0": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_memory",
+      "mode": "master",
+      "dataWidth": "64",
+      "portMap": {"p_fpga_test_B_StateSpace_o1_d0": "DATA"},
+      "ports": ["p_fpga_test_B_StateSpace_o1_d0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "_fpga_test_B"
+        }]
+    },
+    "p_fpga_test_B_StateSpace_o1_address1": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_memory",
+      "mode": "master",
+      "dataWidth": "1",
+      "portMap": {"p_fpga_test_B_StateSpace_o1_address1": "DATA"},
+      "ports": ["p_fpga_test_B_StateSpace_o1_address1"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "_fpga_test_B"
+        }]
+    },
+    "p_fpga_test_B_StateSpace_o1_d1": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_memory",
+      "mode": "master",
+      "dataWidth": "64",
+      "portMap": {"p_fpga_test_B_StateSpace_o1_d1": "DATA"},
+      "ports": ["p_fpga_test_B_StateSpace_o1_d1"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "_fpga_test_B"
+        }]
+    },
+    "p_fpga_test_B_StateSpace_o2": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "64",
+      "portMap": {"p_fpga_test_B_StateSpace_o2": "DATA"},
+      "ports": ["p_fpga_test_B_StateSpace_o2"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "_fpga_test_B"
+        }]
+    },
+    "p_fpga_test_B_DataTypeConversion2": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "64",
+      "portMap": {"p_fpga_test_B_DataTypeConversion2": "DATA"},
+      "ports": ["p_fpga_test_B_DataTypeConversion2"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "_fpga_test_B"
+        }]
+    },
+    "p_fpga_test_B_LookUpTable": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "64",
+      "portMap": {"p_fpga_test_B_LookUpTable": "DATA"},
+      "ports": ["p_fpga_test_B_LookUpTable"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "_fpga_test_B"
+        }]
+    },
+    "p_fpga_test_B_IC": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "64",
+      "portMap": {"p_fpga_test_B_IC": "DATA"},
+      "ports": ["p_fpga_test_B_IC"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "_fpga_test_B"
+        }]
+    },
+    "p_fpga_test_B_Derivative": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "64",
+      "portMap": {"p_fpga_test_B_Derivative": "DATA"},
+      "ports": ["p_fpga_test_B_Derivative"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "_fpga_test_B"
+        }]
+    },
+    "p_fpga_test_B_DataTypeConversion1": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "8",
+      "portMap": {"p_fpga_test_B_DataTypeConversion1": "DATA"},
+      "ports": ["p_fpga_test_B_DataTypeConversion1"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "_fpga_test_B"
+        }]
+    },
+    "p_fpga_test_DW_DelayTs_DSTATE": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "64",
+      "portMap": {"p_fpga_test_DW_DelayTs_DSTATE": "DATA"},
+      "ports": ["p_fpga_test_DW_DelayTs_DSTATE"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "_fpga_test_DW"
+        }]
+    },
+    "p_fpga_test_DW_DelayTs_DSTATE_f": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "64",
+      "portMap": {"p_fpga_test_DW_DelayTs_DSTATE_f": "DATA"},
+      "ports": ["p_fpga_test_DW_DelayTs_DSTATE_f"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "_fpga_test_DW"
+        }]
+    },
+    "p_fpga_test_DW_IC_FirstOutputTime": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "64",
+      "portMap": {"p_fpga_test_DW_IC_FirstOutputTime": "DATA"},
+      "ports": ["p_fpga_test_DW_IC_FirstOutputTime"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "_fpga_test_DW"
+        }]
+    },
+    "p_fpga_test_DW_TimeStampA": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "64",
+      "portMap": {"p_fpga_test_DW_TimeStampA": "DATA"},
+      "ports": ["p_fpga_test_DW_TimeStampA"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "_fpga_test_DW"
+        }]
+    },
+    "p_fpga_test_DW_LastUAtTimeA": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "64",
+      "portMap": {"p_fpga_test_DW_LastUAtTimeA": "DATA"},
+      "ports": ["p_fpga_test_DW_LastUAtTimeA"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "_fpga_test_DW"
+        }]
+    },
+    "p_fpga_test_DW_TimeStampB": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "64",
+      "portMap": {"p_fpga_test_DW_TimeStampB": "DATA"},
+      "ports": ["p_fpga_test_DW_TimeStampB"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "_fpga_test_DW"
+        }]
+    },
+    "p_fpga_test_DW_LastUAtTimeB": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "64",
+      "portMap": {"p_fpga_test_DW_LastUAtTimeB": "DATA"},
+      "ports": ["p_fpga_test_DW_LastUAtTimeB"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "_fpga_test_DW"
+        }]
+    },
+    "p_fpga_test_DW_StateSpace_PWORK": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "832",
+      "portMap": {"p_fpga_test_DW_StateSpace_PWORK": "DATA"},
+      "ports": ["p_fpga_test_DW_StateSpace_PWORK"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "_fpga_test_DW"
+        }]
+    },
+    "p_fpga_test_DW_StateSpace_IWORK_address0": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_memory",
+      "mode": "master",
+      "dataWidth": "4",
+      "portMap": {"p_fpga_test_DW_StateSpace_IWORK_address0": "DATA"},
+      "ports": ["p_fpga_test_DW_StateSpace_IWORK_address0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "_fpga_test_DW"
+        }]
+    },
+    "p_fpga_test_DW_StateSpace_IWORK_d0": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_memory",
+      "mode": "master",
+      "dataWidth": "32",
+      "portMap": {"p_fpga_test_DW_StateSpace_IWORK_d0": "DATA"},
+      "ports": ["p_fpga_test_DW_StateSpace_IWORK_d0"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "_fpga_test_DW"
+        }]
+    },
+    "p_fpga_test_DW_StateSpace_IWORK_address1": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_memory",
+      "mode": "master",
+      "dataWidth": "4",
+      "portMap": {"p_fpga_test_DW_StateSpace_IWORK_address1": "DATA"},
+      "ports": ["p_fpga_test_DW_StateSpace_IWORK_address1"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "_fpga_test_DW"
+        }]
+    },
+    "p_fpga_test_DW_StateSpace_IWORK_d1": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_memory",
+      "mode": "master",
+      "dataWidth": "32",
+      "portMap": {"p_fpga_test_DW_StateSpace_IWORK_d1": "DATA"},
+      "ports": ["p_fpga_test_DW_StateSpace_IWORK_d1"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_memory",
+          "register_option": "0",
+          "argName": "_fpga_test_DW"
+        }]
+    },
+    "p_fpga_test_DW_u5_Mode": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "8",
+      "portMap": {"p_fpga_test_DW_u5_Mode": "DATA"},
+      "ports": ["p_fpga_test_DW_u5_Mode"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "_fpga_test_DW"
+        }]
+    },
+    "p_fpga_test_M": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "520",
+      "portMap": {"p_fpga_test_M": "DATA"},
+      "ports": ["p_fpga_test_M"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "_fpga_test_M"
+        }]
+    }
+  },
+  "RtlPorts": {
+    "ap_clk": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_rst": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_start": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_done": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_idle": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_ready": {
+      "dir": "out",
+      "width": "1"
+    },
+    "p_fpga_test_B_AC": {
+      "dir": "out",
+      "width": "32"
+    },
+    "p_fpga_test_B_AC_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "p_fpga_test_B_StateSpace_o1_address0": {
+      "dir": "out",
+      "width": "1",
+      "isVector": "true"
+    },
+    "p_fpga_test_B_StateSpace_o1_ce0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "p_fpga_test_B_StateSpace_o1_we0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "p_fpga_test_B_StateSpace_o1_d0": {
+      "dir": "out",
+      "width": "64"
+    },
+    "p_fpga_test_B_StateSpace_o1_address1": {
+      "dir": "out",
+      "width": "1",
+      "isVector": "true"
+    },
+    "p_fpga_test_B_StateSpace_o1_ce1": {
+      "dir": "out",
+      "width": "1"
+    },
+    "p_fpga_test_B_StateSpace_o1_we1": {
+      "dir": "out",
+      "width": "1"
+    },
+    "p_fpga_test_B_StateSpace_o1_d1": {
+      "dir": "out",
+      "width": "64"
+    },
+    "p_fpga_test_B_StateSpace_o2": {
+      "dir": "out",
+      "width": "64"
+    },
+    "p_fpga_test_B_StateSpace_o2_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "p_fpga_test_B_DataTypeConversion2": {
+      "dir": "out",
+      "width": "64"
+    },
+    "p_fpga_test_B_DataTypeConversion2_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "p_fpga_test_B_LookUpTable": {
+      "dir": "out",
+      "width": "64"
+    },
+    "p_fpga_test_B_LookUpTable_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "p_fpga_test_B_IC": {
+      "dir": "out",
+      "width": "64"
+    },
+    "p_fpga_test_B_IC_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "p_fpga_test_B_Derivative": {
+      "dir": "out",
+      "width": "64"
+    },
+    "p_fpga_test_B_Derivative_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "p_fpga_test_B_DataTypeConversion1": {
+      "dir": "out",
+      "width": "8"
+    },
+    "p_fpga_test_B_DataTypeConversion1_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "p_fpga_test_DW_DelayTs_DSTATE": {
+      "dir": "out",
+      "width": "64"
+    },
+    "p_fpga_test_DW_DelayTs_DSTATE_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "p_fpga_test_DW_DelayTs_DSTATE_f": {
+      "dir": "out",
+      "width": "64"
+    },
+    "p_fpga_test_DW_DelayTs_DSTATE_f_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "p_fpga_test_DW_IC_FirstOutputTime": {
+      "dir": "out",
+      "width": "64"
+    },
+    "p_fpga_test_DW_IC_FirstOutputTime_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "p_fpga_test_DW_TimeStampA": {
+      "dir": "out",
+      "width": "64"
+    },
+    "p_fpga_test_DW_TimeStampA_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "p_fpga_test_DW_LastUAtTimeA": {
+      "dir": "out",
+      "width": "64"
+    },
+    "p_fpga_test_DW_LastUAtTimeA_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "p_fpga_test_DW_TimeStampB": {
+      "dir": "out",
+      "width": "64"
+    },
+    "p_fpga_test_DW_TimeStampB_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "p_fpga_test_DW_LastUAtTimeB": {
+      "dir": "out",
+      "width": "64"
+    },
+    "p_fpga_test_DW_LastUAtTimeB_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "p_fpga_test_DW_StateSpace_PWORK": {
+      "dir": "out",
+      "width": "832"
+    },
+    "p_fpga_test_DW_StateSpace_PWORK_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "p_fpga_test_DW_StateSpace_IWORK_address0": {
+      "dir": "out",
+      "width": "4"
+    },
+    "p_fpga_test_DW_StateSpace_IWORK_ce0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "p_fpga_test_DW_StateSpace_IWORK_we0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "p_fpga_test_DW_StateSpace_IWORK_d0": {
+      "dir": "out",
+      "width": "32"
+    },
+    "p_fpga_test_DW_StateSpace_IWORK_address1": {
+      "dir": "out",
+      "width": "4"
+    },
+    "p_fpga_test_DW_StateSpace_IWORK_ce1": {
+      "dir": "out",
+      "width": "1"
+    },
+    "p_fpga_test_DW_StateSpace_IWORK_we1": {
+      "dir": "out",
+      "width": "1"
+    },
+    "p_fpga_test_DW_StateSpace_IWORK_d1": {
+      "dir": "out",
+      "width": "32"
+    },
+    "p_fpga_test_DW_u5_Mode": {
+      "dir": "out",
+      "width": "8"
+    },
+    "p_fpga_test_DW_u5_Mode_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "p_fpga_test_M": {
+      "dir": "out",
+      "width": "520"
+    },
+    "p_fpga_test_M_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    }
+  },
+  "ModuleInfo": {
+    "Hierarchy": {"ModuleName": "fpga_test_initialize"},
+    "Info": {"fpga_test_initialize": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      }},
+    "Metrics": {"fpga_test_initialize": {
+        "Latency": {
+          "LatencyBest": "14",
+          "LatencyAvg": "14",
+          "LatencyWorst": "14",
+          "PipelineII": "15",
+          "PipelineDepth": "",
+          "PipelineType": "no"
+        },
+        "Timing": {
+          "Target": "50000.00",
+          "Uncertainty": "13500.00",
+          "Estimate": "4.181"
+        },
+        "Loops": [{
+            "Name": "init_1",
+            "TripCount": "2",
+            "Latency": "8",
+            "PipelineII": "",
+            "PipelineDepth": "4",
+            "Loops": [{
+                "Name": "init_2",
+                "TripCount": "2",
+                "Latency": "2",
+                "PipelineII": "",
+                "PipelineDepth": "1"
+              }]
+          }],
+        "Area": {
+          "FF": "235",
+          "AVAIL_FF": "126800",
+          "UTIL_FF": "~0",
+          "LUT": "410",
+          "AVAIL_LUT": "63400",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "270",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "240",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      }}
+  },
+  "GenerateBdFiles": "0",
+  "GenData": {
+    "DataVersion": "0.2",
+    "Time": "2023-08-31 17:42:30 +0200",
+    "ToolName": "vitis_hls",
+    "ToolVersion": "2023.1"
+  }
+}
