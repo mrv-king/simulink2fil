@@ -1,0 +1,2 @@
+C:\Users\nikgal\Desktop\fpga_test_grt_rtw\msvc\x64\Debug\fpga_test.exe
+C:\Users\nikgal\Desktop\fpga_test_grt_rtw_initial\msvc\x64\Debug\fpga_test.exe
