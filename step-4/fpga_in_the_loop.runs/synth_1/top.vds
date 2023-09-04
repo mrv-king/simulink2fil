@@ -1,0 +1,709 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Aug 31 19:56:15 2023
+# Process ID: 18712
+# Current directory: C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.runs/synth_1/top.vds
+# Journal file: C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.runs/synth_1\vivado.jou
+# Running On: DESKTOP-TDOE7A4, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 34064 MB
+#-----------------------------------------------------------
+source top.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 469.699 ; gain = 199.348
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/nikgal/Vivado/fpga_model'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/utils_1/imports/synth_1/top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 7780
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_B_AC_ap_vld', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:300]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_B_StateSpace_o1_we0', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:301]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_B_StateSpace_o1_we1', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:302]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_B_StateSpace_o2_ap_vld', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:303]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_B_DataTypeConversion2_ap_vld', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:304]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_B_LookUpTable_ap_vld', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:305]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_B_IC_ap_vld', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:306]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_B_Derivative_ap_vld', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:307]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_B_DataTypeConversion1_ap_vld', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:308]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_DW_DelayTs_DSTATE_ap_vld', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:309]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_DW_DelayTs_DSTATE_f_ap_vld', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:310]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_DW_IC_FirstOutputTime_ap_vld', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:311]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_DW_TimeStampA_ap_vld', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:312]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_DW_LastUAtTimeA_ap_vld', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:313]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_DW_TimeStampB_ap_vld', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:314]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_DW_LastUAtTimeB_ap_vld', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:315]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_DW_StateSpace_PWORK_ap_vld', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:316]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_DW_StateSpace_IWORK_we0', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:317]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_DW_StateSpace_IWORK_we1', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:318]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_DW_u5_Mode_ap_vld', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:319]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_M_ap_vld', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:320]
+INFO: [Synth 8-11241] undeclared symbol 'ap_clk_init', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:322]
+INFO: [Synth 8-11241] undeclared symbol 'ap_done_init', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:324]
+INFO: [Synth 8-11241] undeclared symbol 'fpga_test_Y_ap_step_vld', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:345]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_B_AC_ap_step_vld', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:346]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_B_StateSpace_o1_step_we0', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:347]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_B_StateSpace_o1_step_we1', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:348]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_B_StateSpace_o2_ap_step_vld', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:349]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_B_DataTypeConversion2_ap_step_vld', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:350]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_B_LookUpTable_ap_step_vld', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:351]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_B_IC_ap_step_vld', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:352]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_B_Derivative_ap_step_vld', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:353]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_B_DataTypeConversion1_ap_step_vld', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:354]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_DW_DelayTs_DSTATE_ap_step_vld', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:355]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_DW_DelayTs_DSTATE_f_ap_step_vld', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:356]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_DW_IC_FirstOutputTime_ap_step_vld', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:357]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_DW_TimeStampA_ap_step_vld', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:358]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_DW_LastUAtTimeA_ap_step_vld', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:359]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_DW_TimeStampB_ap_step_vld', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:360]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_DW_LastUAtTimeB_ap_step_vld', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:361]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_DW_StateSpace_PWORK_ap_step_vld', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:362]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_DW_StateSpace_IWORK_step_we0', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:363]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_DW_StateSpace_IWORK_step_we1', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:364]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_DW_u5_Mode_ap_step_vld', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:365]
+INFO: [Synth 8-11241] undeclared symbol 'fpga_test_M_o_ap_step_vld', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:366]
+INFO: [Synth 8-11241] undeclared symbol 'ap_clk_step', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:368]
+INFO: [Synth 8-11241] undeclared symbol 'ap_done_step', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:370]
+INFO: [Synth 8-11241] undeclared symbol 'ap_ready', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:371]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_B_AC_step', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:378]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_B_StateSpace_o2_step', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:381]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_B_DataTypeConversion2_step', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:382]
+INFO: [Synth 8-11241] undeclared symbol 'p_fpga_test_B_IC_step', assumed default net type 'wire' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:384]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1311.285 ; gain = 411.410
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:23]
+WARNING: [Synth 8-6090] variable 'LED' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:195]
+WARNING: [Synth 8-6090] variable 'LED' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:201]
+WARNING: [Synth 8-6090] variable 'LED' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:240]
+WARNING: [Synth 8-6090] variable 'LED' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:283]
+WARNING: [Synth 8-6090] variable 'LED' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:285]
+WARNING: [Synth 8-6090] variable 'LED' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:292]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:193]
+INFO: [Synth 8-6157] synthesizing module 'fpga_test_initialize_0' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.runs/synth_1/.Xil/Vivado-18712-DESKTOP-TDOE7A4/realtime/fpga_test_initialize_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fpga_test_initialize_0' (0#1) [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.runs/synth_1/.Xil/Vivado-18712-DESKTOP-TDOE7A4/realtime/fpga_test_initialize_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'p_fpga_test_B_StateSpace_o1_ce0' of module 'fpga_test_initialize_0' is unconnected for instance 'init' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:299]
+WARNING: [Synth 8-7071] port 'p_fpga_test_B_StateSpace_o1_ce1' of module 'fpga_test_initialize_0' is unconnected for instance 'init' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:299]
+WARNING: [Synth 8-7071] port 'p_fpga_test_DW_StateSpace_IWORK_ce0' of module 'fpga_test_initialize_0' is unconnected for instance 'init' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:299]
+WARNING: [Synth 8-7071] port 'p_fpga_test_DW_StateSpace_IWORK_ce1' of module 'fpga_test_initialize_0' is unconnected for instance 'init' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:299]
+WARNING: [Synth 8-7071] port 'ap_rst' of module 'fpga_test_initialize_0' is unconnected for instance 'init' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:299]
+WARNING: [Synth 8-7071] port 'ap_idle' of module 'fpga_test_initialize_0' is unconnected for instance 'init' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:299]
+WARNING: [Synth 8-7071] port 'ap_ready' of module 'fpga_test_initialize_0' is unconnected for instance 'init' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:299]
+WARNING: [Synth 8-7071] port 'p_fpga_test_B_AC' of module 'fpga_test_initialize_0' is unconnected for instance 'init' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:299]
+WARNING: [Synth 8-7071] port 'p_fpga_test_B_StateSpace_o1_address0' of module 'fpga_test_initialize_0' is unconnected for instance 'init' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:299]
+WARNING: [Synth 8-7071] port 'p_fpga_test_B_StateSpace_o1_address1' of module 'fpga_test_initialize_0' is unconnected for instance 'init' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:299]
+WARNING: [Synth 8-7071] port 'p_fpga_test_B_StateSpace_o2' of module 'fpga_test_initialize_0' is unconnected for instance 'init' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:299]
+WARNING: [Synth 8-7071] port 'p_fpga_test_B_DataTypeConversion2' of module 'fpga_test_initialize_0' is unconnected for instance 'init' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:299]
+WARNING: [Synth 8-7071] port 'p_fpga_test_B_IC' of module 'fpga_test_initialize_0' is unconnected for instance 'init' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:299]
+WARNING: [Synth 8-7071] port 'p_fpga_test_DW_StateSpace_IWORK_address0' of module 'fpga_test_initialize_0' is unconnected for instance 'init' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:299]
+WARNING: [Synth 8-7071] port 'p_fpga_test_DW_StateSpace_IWORK_address1' of module 'fpga_test_initialize_0' is unconnected for instance 'init' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:299]
+WARNING: [Synth 8-7023] instance 'init' of module 'fpga_test_initialize_0' has 56 connections declared, but only 41 given [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:299]
+INFO: [Synth 8-6157] synthesizing module 'fpga_test_step_0' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.runs/synth_1/.Xil/Vivado-18712-DESKTOP-TDOE7A4/realtime/fpga_test_step_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fpga_test_step_0' (0#1) [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.runs/synth_1/.Xil/Vivado-18712-DESKTOP-TDOE7A4/realtime/fpga_test_step_0_stub.v:6]
+WARNING: [Synth 8-689] width (1) of port connection 'p_fpga_test_B_AC' does not match port width (32) of module 'fpga_test_step_0' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:378]
+WARNING: [Synth 8-689] width (1) of port connection 'p_fpga_test_B_StateSpace_o2' does not match port width (64) of module 'fpga_test_step_0' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:381]
+WARNING: [Synth 8-689] width (1) of port connection 'p_fpga_test_B_DataTypeConversion2' does not match port width (64) of module 'fpga_test_step_0' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:382]
+WARNING: [Synth 8-689] width (1) of port connection 'p_fpga_test_B_IC' does not match port width (64) of module 'fpga_test_step_0' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:384]
+WARNING: [Synth 8-7071] port 'fpga_test_B_StateSpace_o1_ce0' of module 'fpga_test_step_0' is unconnected for instance 'step' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:344]
+WARNING: [Synth 8-7071] port 'p_fpga_test_B_StateSpace_o1_ce0' of module 'fpga_test_step_0' is unconnected for instance 'step' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:344]
+WARNING: [Synth 8-7071] port 'p_fpga_test_B_StateSpace_o1_ce1' of module 'fpga_test_step_0' is unconnected for instance 'step' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:344]
+WARNING: [Synth 8-7071] port 'fpga_test_DW_StateSpace_IWORK_ce0' of module 'fpga_test_step_0' is unconnected for instance 'step' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:344]
+WARNING: [Synth 8-7071] port 'fpga_test_DW_StateSpace_IWORK_ce1' of module 'fpga_test_step_0' is unconnected for instance 'step' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:344]
+WARNING: [Synth 8-7071] port 'p_fpga_test_DW_StateSpace_IWORK_ce0' of module 'fpga_test_step_0' is unconnected for instance 'step' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:344]
+WARNING: [Synth 8-7071] port 'p_fpga_test_DW_StateSpace_IWORK_ce1' of module 'fpga_test_step_0' is unconnected for instance 'step' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:344]
+WARNING: [Synth 8-7071] port 'ap_rst' of module 'fpga_test_step_0' is unconnected for instance 'step' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:344]
+WARNING: [Synth 8-7071] port 'ap_idle' of module 'fpga_test_step_0' is unconnected for instance 'step' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:344]
+WARNING: [Synth 8-7071] port 'fpga_test_B_AC' of module 'fpga_test_step_0' is unconnected for instance 'step' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:344]
+WARNING: [Synth 8-7071] port 'fpga_test_B_StateSpace_o1_address0' of module 'fpga_test_step_0' is unconnected for instance 'step' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:344]
+WARNING: [Synth 8-7071] port 'fpga_test_B_StateSpace_o2' of module 'fpga_test_step_0' is unconnected for instance 'step' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:344]
+WARNING: [Synth 8-7071] port 'fpga_test_B_DataTypeConversion2' of module 'fpga_test_step_0' is unconnected for instance 'step' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:344]
+WARNING: [Synth 8-7071] port 'fpga_test_B_IC' of module 'fpga_test_step_0' is unconnected for instance 'step' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:344]
+WARNING: [Synth 8-7071] port 'p_fpga_test_B_StateSpace_o1_address0' of module 'fpga_test_step_0' is unconnected for instance 'step' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:344]
+WARNING: [Synth 8-7071] port 'p_fpga_test_B_StateSpace_o1_address1' of module 'fpga_test_step_0' is unconnected for instance 'step' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:344]
+WARNING: [Synth 8-7071] port 'fpga_test_DW_StateSpace_IWORK_address0' of module 'fpga_test_step_0' is unconnected for instance 'step' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:344]
+WARNING: [Synth 8-7071] port 'fpga_test_DW_StateSpace_IWORK_address1' of module 'fpga_test_step_0' is unconnected for instance 'step' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:344]
+WARNING: [Synth 8-7071] port 'p_fpga_test_DW_StateSpace_IWORK_address0' of module 'fpga_test_step_0' is unconnected for instance 'step' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:344]
+WARNING: [Synth 8-7071] port 'p_fpga_test_DW_StateSpace_IWORK_address1' of module 'fpga_test_step_0' is unconnected for instance 'step' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:344]
+WARNING: [Synth 8-7023] instance 'step' of module 'fpga_test_step_0' has 85 connections declared, but only 65 given [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:344]
+INFO: [Synth 8-6157] synthesizing module 'PLLE2_BASE' [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:109492]
+	Parameter CLKFBOUT_MULT bound to: 10 - type: integer 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE bound to: 20 - type: integer 
+	Parameter CLKOUT1_DIVIDE bound to: 20 - type: integer 
+	Parameter CLKOUT1_PHASE bound to: 45.000000 - type: double 
+INFO: [Synth 8-6155] done synthesizing module 'PLLE2_BASE' (0#1) [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:109492]
+WARNING: [Synth 8-7071] port 'CLKOUT2' of module 'PLLE2_BASE' is unconnected for instance 'clk_gen' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:430]
+WARNING: [Synth 8-7071] port 'CLKOUT3' of module 'PLLE2_BASE' is unconnected for instance 'clk_gen' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:430]
+WARNING: [Synth 8-7071] port 'CLKOUT4' of module 'PLLE2_BASE' is unconnected for instance 'clk_gen' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:430]
+WARNING: [Synth 8-7071] port 'CLKOUT5' of module 'PLLE2_BASE' is unconnected for instance 'clk_gen' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:430]
+WARNING: [Synth 8-7071] port 'PWRDWN' of module 'PLLE2_BASE' is unconnected for instance 'clk_gen' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:430]
+WARNING: [Synth 8-7023] instance 'clk_gen' of module 'PLLE2_BASE' has 12 connections declared, but only 7 given [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:430]
+INFO: [Synth 8-6157] synthesizing module 'eth_mac' [C:/Users/nikgal/Vivado/fpga_in_the_loop/rtl/eth_mac.v:3]
+	Parameter AXIS_INTERFACES bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'tx_axis_adapter' [C:/Users/nikgal/Vivado/fpga_in_the_loop/rtl/tx_axis_adapter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'tx_axis_adapter' (0#1) [C:/Users/nikgal/Vivado/fpga_in_the_loop/rtl/tx_axis_adapter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'rx_axis_adapter' [C:/Users/nikgal/Vivado/fpga_in_the_loop/rtl/rx_axis_adapter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'rx_axis_adapter' (0#1) [C:/Users/nikgal/Vivado/fpga_in_the_loop/rtl/rx_axis_adapter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:76334]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:76334]
+INFO: [Synth 8-6157] synthesizing module 'eth_config' [C:/Users/nikgal/Vivado/fpga_in_the_loop/rtl/eth_status.v:3]
+INFO: [Synth 8-6157] synthesizing module 'eth_smi' [C:/Users/nikgal/Vivado/fpga_in_the_loop/rtl/eth_smi.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nikgal/Vivado/fpga_in_the_loop/rtl/eth_smi.v:84]
+INFO: [Synth 8-6155] done synthesizing module 'eth_smi' (0#1) [C:/Users/nikgal/Vivado/fpga_in_the_loop/rtl/eth_smi.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nikgal/Vivado/fpga_in_the_loop/rtl/eth_status.v:103]
+INFO: [Synth 8-6155] done synthesizing module 'eth_config' (0#1) [C:/Users/nikgal/Vivado/fpga_in_the_loop/rtl/eth_status.v:3]
+INFO: [Synth 8-6157] synthesizing module 'eth_rx' [C:/Users/nikgal/Vivado/fpga_in_the_loop/rtl/eth_rx.v:3]
+INFO: [Synth 8-6157] synthesizing module 'crc32' [C:/Users/nikgal/Vivado/fpga_in_the_loop/rtl/crc32.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'crc32' (0#1) [C:/Users/nikgal/Vivado/fpga_in_the_loop/rtl/crc32.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nikgal/Vivado/fpga_in_the_loop/rtl/eth_rx.v:100]
+INFO: [Synth 8-6155] done synthesizing module 'eth_rx' (0#1) [C:/Users/nikgal/Vivado/fpga_in_the_loop/rtl/eth_rx.v:3]
+INFO: [Synth 8-6157] synthesizing module 'eth_tx' [C:/Users/nikgal/Vivado/fpga_in_the_loop/rtl/eth_tx.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'eth_tx' (0#1) [C:/Users/nikgal/Vivado/fpga_in_the_loop/rtl/eth_tx.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'eth_mac' (0#1) [C:/Users/nikgal/Vivado/fpga_in_the_loop/rtl/eth_mac.v:3]
+WARNING: [Synth 8-7071] port 'rx_vld' of module 'eth_mac' is unconnected for instance 'mac_inst' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:463]
+WARNING: [Synth 8-7071] port 'rx_dat' of module 'eth_mac' is unconnected for instance 'mac_inst' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:463]
+WARNING: [Synth 8-7071] port 'rx_sof' of module 'eth_mac' is unconnected for instance 'mac_inst' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:463]
+WARNING: [Synth 8-7071] port 'rx_eof' of module 'eth_mac' is unconnected for instance 'mac_inst' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:463]
+WARNING: [Synth 8-7071] port 'rx_err' of module 'eth_mac' is unconnected for instance 'mac_inst' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:463]
+WARNING: [Synth 8-7071] port 'tx_vld' of module 'eth_mac' is unconnected for instance 'mac_inst' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:463]
+WARNING: [Synth 8-7071] port 'tx_dat' of module 'eth_mac' is unconnected for instance 'mac_inst' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:463]
+WARNING: [Synth 8-7071] port 'tx_sof' of module 'eth_mac' is unconnected for instance 'mac_inst' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:463]
+WARNING: [Synth 8-7071] port 'tx_eof' of module 'eth_mac' is unconnected for instance 'mac_inst' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:463]
+WARNING: [Synth 8-7071] port 'tx_ack' of module 'eth_mac' is unconnected for instance 'mac_inst' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:463]
+WARNING: [Synth 8-7071] port 'speed_100' of module 'eth_mac' is unconnected for instance 'mac_inst' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:463]
+WARNING: [Synth 8-7071] port 'full_duplex' of module 'eth_mac' is unconnected for instance 'mac_inst' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:463]
+WARNING: [Synth 8-7071] port 'link_up' of module 'eth_mac' is unconnected for instance 'mac_inst' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:463]
+WARNING: [Synth 8-7071] port 'remote_fault' of module 'eth_mac' is unconnected for instance 'mac_inst' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:463]
+WARNING: [Synth 8-7071] port 'auto_neg_done' of module 'eth_mac' is unconnected for instance 'mac_inst' [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:463]
+WARNING: [Synth 8-7023] instance 'mac_inst' of module 'eth_mac' has 43 connections declared, but only 28 given [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:463]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:554]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:23]
+WARNING: [Synth 8-3848] Net rx_vld in module/entity eth_mac does not have driver. [C:/Users/nikgal/Vivado/fpga_in_the_loop/rtl/eth_mac.v:25]
+WARNING: [Synth 8-3848] Net rx_dat in module/entity eth_mac does not have driver. [C:/Users/nikgal/Vivado/fpga_in_the_loop/rtl/eth_mac.v:26]
+WARNING: [Synth 8-3848] Net rx_sof in module/entity eth_mac does not have driver. [C:/Users/nikgal/Vivado/fpga_in_the_loop/rtl/eth_mac.v:27]
+WARNING: [Synth 8-3848] Net rx_eof in module/entity eth_mac does not have driver. [C:/Users/nikgal/Vivado/fpga_in_the_loop/rtl/eth_mac.v:28]
+WARNING: [Synth 8-3848] Net rx_err in module/entity eth_mac does not have driver. [C:/Users/nikgal/Vivado/fpga_in_the_loop/rtl/eth_mac.v:29]
+WARNING: [Synth 8-3848] Net tx_ack in module/entity eth_mac does not have driver. [C:/Users/nikgal/Vivado/fpga_in_the_loop/rtl/eth_mac.v:40]
+WARNING: [Synth 8-6014] Unused sequential element p_fpga_test_B_StateSpace_o1_d1_reg_reg was removed.  [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/sources_1/new/top.v:205]
+WARNING: [Synth 8-7129] Port eth_intn in module eth_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_sof in module rx_axis_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_vld in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_dat[7] in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_dat[6] in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_dat[5] in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_dat[4] in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_dat[3] in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_dat[2] in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_dat[1] in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_dat[0] in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_sof in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_eof in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_err in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_ack in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_vld in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_dat[7] in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_dat[6] in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_dat[5] in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_dat[4] in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_dat[3] in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_dat[2] in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_dat[1] in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_dat[0] in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_sof in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_eof in module eth_mac is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1415.672 ; gain = 515.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1415.672 ; gain = 515.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1415.672 ; gain = 515.797
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.091 . Memory (MB): peak = 1415.672 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_test_step_0/fpga_test_step_0/fpga_test_step_0_in_context.xdc] for cell 'step'
+Finished Parsing XDC File [c:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_test_step_0/fpga_test_step_0/fpga_test_step_0_in_context.xdc] for cell 'step'
+Parsing XDC File [c:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_test_initialize_0/fpga_test_initialize_0/fpga_test_initialize_0_in_context.xdc] for cell 'init'
+Finished Parsing XDC File [c:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_test_initialize_0/fpga_test_initialize_0/fpga_test_initialize_0_in_context.xdc] for cell 'init'
+Parsing XDC File [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/constrs_1/new/my_const.xdc]
+INFO: [Timing 38-2] Deriving generated clocks [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/constrs_1/new/my_const.xdc:10]
+Finished Parsing XDC File [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/constrs_1/new/my_const.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.srcs/constrs_1/new/my_const.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1520.043 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 6 instances
+  PLLE2_BASE => PLLE2_ADV: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1520.043 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1520.043 ; gain = 620.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1520.043 ; gain = 620.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for step. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for init. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1520.043 ; gain = 620.168
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'tx_axis_adapter'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'eth_smi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'eth_config'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'state_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'eth_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_eth_reg' in module 'top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_IDLE |                               00 |                               00
+              STATE_DATA |                               01 |                               01
+               STATE_EOF |                               10 |                               10
+           STATE_ACK_EOF |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'tx_axis_adapter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_IDLE |                              001 |                               00
+              STATE_SEND |                              010 |                               01
+              STATE_READ |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'eth_smi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               STATE_RST |                              000 |                              000
+              STATE_IDLE |                              001 |                              001
+         STATE_CHECK_REQ |                              010 |                              010
+        STATE_CHECK_READ |                              011 |                              011
+          STATE_USER_REQ |                              100 |                              100
+         STATE_USER_READ |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'eth_config'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_IDLE |                              000 |                              000
+          STATE_PREAMBLE |                              001 |                              001
+              STATE_BODY |                              010 |                              010
+               STATE_PAD |                              011 |                              011
+              STATE_CRC1 |                              100 |                              100
+              STATE_CRC2 |                              101 |                              101
+              STATE_CRC3 |                              110 |                              110
+               STATE_GAP |                              111 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'eth_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               STATE_RST |                              001 |                              000
+              STATE_IDLE |                              010 |                              001
+         STATE_CHECK_REG |                              100 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_eth_reg' using encoding 'one-hot' in module 'top'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1520.043 ; gain = 620.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 3     
+	   2 Input    2 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
+	   2 Input      8 Bit         XORs := 2     
++---Registers : 
+	              832 Bit    Registers := 1     
+	              520 Bit    Registers := 1     
+	               65 Bit    Registers := 1     
+	               64 Bit    Registers := 11    
+	               32 Bit    Registers := 6     
+	               30 Bit    Registers := 2     
+	               16 Bit    Registers := 3     
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 13    
+	                7 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 34    
++---ROMs : 
+	                    ROMs := 2     
++---Muxes : 
+	   2 Input  832 Bit        Muxes := 1     
+	   4 Input  832 Bit        Muxes := 1     
+	   2 Input  520 Bit        Muxes := 1     
+	   4 Input  520 Bit        Muxes := 1     
+	   3 Input   65 Bit        Muxes := 1     
+	   2 Input   64 Bit        Muxes := 11    
+	   4 Input   64 Bit        Muxes := 10    
+	   2 Input   32 Bit        Muxes := 8     
+	   4 Input   32 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 5     
+	   6 Input   16 Bit        Muxes := 2     
+	   4 Input   16 Bit        Muxes := 2     
+	   3 Input   11 Bit        Muxes := 1     
+	   3 Input    8 Bit        Muxes := 3     
+	   2 Input    8 Bit        Muxes := 19    
+	   8 Input    8 Bit        Muxes := 1     
+	  46 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 2     
+	   9 Input    8 Bit        Muxes := 1     
+	   3 Input    7 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 1     
+	   6 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 10    
+	   6 Input    3 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 1     
+	   8 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 19    
+	   3 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 48    
+	   4 Input    1 Bit        Muxes := 30    
+	   3 Input    1 Bit        Muxes := 10    
+	   6 Input    1 Bit        Muxes := 4     
+	   8 Input    1 Bit        Muxes := 4     
+	   9 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port eth_intn in module eth_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_vld in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_dat[7] in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_dat[6] in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_dat[5] in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_dat[4] in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_dat[3] in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_dat[2] in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_dat[1] in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_dat[0] in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_sof in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_eof in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_err in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_ack in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_vld in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_dat[7] in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_dat[6] in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_dat[5] in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_dat[4] in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_dat[3] in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_dat[2] in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_dat[1] in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_dat[0] in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_sof in module eth_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_eof in module eth_mac is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1520.043 ; gain = 620.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+-------------------------------------------+---------------+----------------+
+|Module Name | RTL Object                                | Depth x Width | Implemented As | 
++------------+-------------------------------------------+---------------+----------------+
+|eth_mac     | eth_rx_inst/crc32_inst/lookup_value_b_reg | 256x30        | Block RAM      | 
+|eth_mac     | eth_tx_inst/crc32_inst/lookup_value_b_reg | 256x30        | Block RAM      | 
++------------+-------------------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1520.043 ; gain = 620.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1520.043 ; gain = 620.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance mac_inst/eth_rx_inst/crc32_inst/lookup_value_b_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mac_inst/eth_rx_inst/crc32_inst/lookup_value_b_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mac_inst/eth_tx_inst/crc32_inst/lookup_value_b_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mac_inst/eth_tx_inst/crc32_inst/lookup_value_b_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1520.043 ; gain = 620.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module init has unconnected pin ap_rst
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin ap_rst
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_AC[31]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_AC[30]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_AC[29]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_AC[28]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_AC[27]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_AC[26]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_AC[25]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_AC[24]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_AC[23]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_AC[22]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_AC[21]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_AC[20]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_AC[19]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_AC[18]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_AC[17]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_AC[16]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_AC[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_AC[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_AC[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_AC[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_AC[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_AC[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_AC[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_AC[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_AC[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_AC[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_AC[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_AC[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_AC[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_AC[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_AC[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_AC[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[63]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[62]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[61]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[60]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[59]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[58]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[57]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[56]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[55]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[54]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[53]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[52]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[51]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[50]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[49]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[48]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[47]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[46]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[45]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[44]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[43]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[42]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[41]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[40]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[39]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[38]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[37]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[36]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[35]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[34]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[33]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[32]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[31]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[30]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[29]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[28]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[27]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[26]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[25]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[24]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[23]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[22]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[21]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[20]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[19]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[18]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[17]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[16]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_StateSpace_o2[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_DataTypeConversion2[63]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module step has unconnected pin fpga_test_B_DataTypeConversion2[62]
+INFO: [Common 17-14] Message 'Synth 8-4442' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1520.043 ; gain = 620.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1520.043 ; gain = 620.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1520.043 ; gain = 620.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1520.043 ; gain = 620.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1520.043 ; gain = 620.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1520.043 ; gain = 620.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------+----------+
+|      |BlackBox name          |Instances |
++------+-----------------------+----------+
+|1     |fpga_test_initialize_0 |         1|
+|2     |fpga_test_step_0       |         1|
++------+-----------------------+----------+
+
+Report Cell Usage: 
++------+---------------------+------+
+|      |Cell                 |Count |
++------+---------------------+------+
+|1     |fpga_test_initialize |     1|
+|2     |fpga_test_step       |     1|
+|3     |BUFG                 |     3|
+|4     |CARRY4               |    27|
+|5     |LUT1                 |    24|
+|6     |LUT2                 |    45|
+|7     |LUT3                 |  2230|
+|8     |LUT4                 |   128|
+|9     |LUT5                 |   159|
+|10    |LUT6                 |   150|
+|11    |MUXF7                |     4|
+|12    |MUXF8                |     2|
+|13    |PLLE2_BASE           |     1|
+|14    |RAMB18E1             |     2|
+|15    |FDRE                 |  2535|
+|16    |FDSE                 |    27|
+|17    |IBUF                 |     3|
+|18    |IOBUF                |     6|
+|19    |OBUF                 |    22|
++------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1520.043 ; gain = 620.168
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 226 critical warnings and 26 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 1520.043 ; gain = 515.797
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1520.043 ; gain = 620.168
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 1520.043 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 42 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'top' is not ideal for floorplanning, since the cellview 'top' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1520.043 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 6 instances
+  PLLE2_BASE => PLLE2_ADV: 1 instance 
+
+Synth Design complete | Checksum: 33489605
+INFO: [Common 17-83] Releasing license: Synthesis
+127 Infos, 129 Warnings, 100 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1520.043 ; gain = 1016.766
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 31 19:57:04 2023...

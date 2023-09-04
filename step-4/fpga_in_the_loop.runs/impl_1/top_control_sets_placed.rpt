@@ -1,0 +1,138 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Thu Aug 31 19:58:50 2023
+| Host         : DESKTOP-TDOE7A4 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    60 |
+|    Minimum number of control sets                        |    60 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   146 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    60 |
+| >= 0 to < 4        |     8 |
+| >= 4 to < 6        |     7 |
+| >= 6 to < 8        |     4 |
+| >= 8 to < 10       |     9 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |    30 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             174 |           86 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              52 |           18 |
+| Yes          | No                    | No                     |            2708 |          997 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             272 |           92 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------+------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+----------------+--------------+
+|     Clock Signal     |                                                Enable Signal                                               |                             Set/Reset Signal                            | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------+------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+----------------+--------------+
+|  ap_clk_init         | init/inst/fpga_test_DW_StateSpace_PWORK_DS_3_fu_128[63]_i_1_n_0                                            | init/inst/ap_NS_fsm16_out                                               |                1 |              1 |         1.00 |
+|  ap_clk_init         | init/inst/fpga_test_DW_StateSpace_PWORK_DS_3_3_fu_140[61]_i_2_n_0                                          | init/inst/ap_NS_fsm16_out                                               |                1 |              1 |         1.00 |
+|  ap_clk_init         | init/inst/fpga_test_DW_StateSpace_PWORK_DS_3_1_fu_132[61]_i_1_n_0                                          | init/inst/ap_NS_fsm16_out                                               |                1 |              1 |         1.00 |
+|  ap_clk_init         | init/inst/fpga_test_DW_StateSpace_PWORK_DS_3_2_fu_136[61]_i_1_n_0                                          | init/inst/ap_NS_fsm16_out                                               |                1 |              1 |         1.00 |
+|  ap_clk_step_BUFG    | step/inst/grp_sin_or_cos_float_s_fu_892/ap_CS_fsm_reg_n_2_[0]                                              | step/inst/grp_sin_or_cos_float_s_fu_892/trunc_ln408_reg_1370[0]_i_1_n_2 |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG |                                                                                                            |                                                                         |                1 |              1 |         1.00 |
+|  ap_clk_step_BUFG    | step/inst/p_fpga_test_B_AC_ap_vld                                                                          |                                                                         |                2 |              2 |         1.00 |
+|  CLK10HZ_BUFG        | LED[14]_i_1_n_0                                                                                            |                                                                         |                2 |              2 |         1.00 |
+|  clk_mac_BUFG        |                                                                                                            | mac_inst/eth_tx_inst/gap_count                                          |                1 |              4 |         4.00 |
+|  clk_mac_BUFG        |                                                                                                            | mac_inst/eth_rx_inst/rstn_d_reg                                         |                3 |              4 |         1.33 |
+|  clk_mac_BUFG        |                                                                                                            | mac_inst/eth_config_inst/eth_smi_inst/counter[3]_i_1_n_0                |                2 |              4 |         2.00 |
+|  ap_clk_step_BUFG    | step/inst/grp_sin_or_cos_float_s_fu_892/c_1_fu_186                                                         | step/inst/grp_sin_or_cos_float_s_fu_892/c_1_fu_186[5]_i_1_n_2           |                1 |              5 |         5.00 |
+|  ap_clk_step_BUFG    | step/inst/grp_sin_or_cos_float_s_fu_892/c_1_3_fu_190                                                       | step/inst/grp_sin_or_cos_float_s_fu_892/c_1_3_fu_190[4]_i_1_n_2         |                1 |              5 |         5.00 |
+|  clk_mac_BUFG        |                                                                                                            | mac_inst/eth_config_inst/eth_smi_inst/FSM_onehot_state[0]_i_1_n_0       |                2 |              5 |         2.50 |
+|  CLK10HZ_BUFG        | p_0_out[12]                                                                                                |                                                                         |                4 |              5 |         1.25 |
+|  CLK10HZ_BUFG        |                                                                                                            |                                                                         |                4 |              6 |         1.50 |
+|  clk_mac_BUFG        | tx_idx[5]_i_2_n_0                                                                                          | tx_idx0                                                                 |                3 |              7 |         2.33 |
+|  clk_mac_BUFG        | mac_inst/eth_config_inst/eth_smi_inst/read_count[6]_i_1_n_0                                                |                                                                         |                2 |              7 |         3.50 |
+|  clk_mac_BUFG        | mac_inst/eth_config_inst/eth_smi_inst/write_counter[6]_i_1_n_0                                             |                                                                         |                2 |              7 |         3.50 |
+|  CLK10HZ_BUFG        | p_0_out[7]                                                                                                 |                                                                         |                5 |              8 |         1.60 |
+|  CLK100MHZ_IBUF_BUFG |                                                                                                            | clear                                                                   |                3 |              8 |         2.67 |
+|  clk_mac_BUFG        | mac_inst/tx_axis_inst/next_tx_dat                                                                          |                                                                         |                2 |              8 |         4.00 |
+|  clk_mac_BUFG        | tx_axis_mac_tdata[7]_i_1_n_0                                                                               |                                                                         |                6 |              8 |         1.33 |
+|  CLK10HZ_BUFG        | fpga_test_Y_reg[31]_i_1_n_0                                                                                |                                                                         |                4 |              8 |         2.00 |
+|  ap_clk_step_BUFG    | step/inst/grp_sin_or_cos_float_s_fu_892/clear                                                              | step/inst/grp_sin_or_cos_float_s_fu_892/sext_ln281_reg_1462[7]_i_1_n_2  |                3 |              8 |         2.67 |
+|  CLK10HZ_BUFG        | p_fpga_test_B_DataTypeConversion1_reg[7]_i_1_n_0                                                           |                                                                         |                2 |              8 |         4.00 |
+|  clk_mac_BUFG        | mac_inst/eth_tx_inst/crc32_inst/p_1_in                                                                     |                                                                         |                8 |              9 |         1.12 |
+|  clk_mac_BUFG        | mac_inst/tx_axis_inst/E[0]                                                                                 |                                                                         |                3 |              9 |         3.00 |
+|  clk_mac_BUFG        |                                                                                                            | mac_inst/eth_tx_inst/crc32_inst/frame_idx                               |                3 |             11 |         3.67 |
+|  ap_clk_init         |                                                                                                            |                                                                         |                4 |             15 |         3.75 |
+|  clk_mac_BUFG        |                                                                                                            | rst_n                                                                   |                4 |             16 |         4.00 |
+|  clk_mac_BUFG        | tx_idx0                                                                                                    |                                                                         |               11 |             20 |         1.82 |
+|  ap_clk_step_BUFG    | step/inst/grp_sin_or_cos_float_s_fu_892/in_shift_fu_194[27]_i_1_n_2                                        |                                                                         |               19 |             28 |         1.47 |
+|  ap_clk_step_BUFG    | step/inst/grp_sin_or_cos_float_s_fu_892/ap_CS_fsm_state3                                                   |                                                                         |                8 |             29 |         3.62 |
+|  ap_clk_step_BUFG    | step/inst/dcmp_64ns_64ns_1_1_no_dsp_1_U42/fpga_test_step_dcmp_64ns_64ns_1_1_no_dsp_1_ip_u/accum_11_fu_3200 | step/inst/ap_NS_fsm114_out                                              |                8 |             32 |         4.00 |
+|  ap_clk_step_BUFG    | step/inst/grp_sin_or_cos_float_s_fu_892/grp_sin_or_cos_float_s_fu_892_ap_ready                             |                                                                         |               13 |             32 |         2.46 |
+|  ap_clk_step_BUFG    | step/inst/grp_sin_or_cos_float_s_fu_892/E[0]                                                               |                                                                         |               10 |             32 |         3.20 |
+|  ap_clk_step_BUFG    | step/inst/grp_sin_or_cos_float_s_fu_892/sel                                                                | step/inst/grp_sin_or_cos_float_s_fu_892/clear                           |               10 |             34 |         3.40 |
+|  ap_clk_step_BUFG    | step/inst/grp_sin_or_cos_float_s_fu_892/ap_CS_fsm_reg_n_2_[0]                                              |                                                                         |               16 |             36 |         2.25 |
+|  clk_mac_BUFG        | mac_inst/eth_config_inst/eth_smi_inst/write_counter[6]_i_1_n_0                                             | mac_inst/eth_config_inst/eth_smi_inst/send_buffer[64]_i_1_n_0           |               10 |             48 |         4.80 |
+|  ap_clk_step_BUFG    |                                                                                                            |                                                                         |               35 |             54 |         1.54 |
+|  CLK10HZ_BUFG        | p_fpga_test_DW_DelayTs_DSTATE_f_reg[63]_i_1_n_0                                                            |                                                                         |               23 |             64 |         2.78 |
+|  ap_clk_step_BUFG    | step/inst/ap_NS_fsm16_out                                                                                  | step/inst/fpga_test_DW3_7_0_1_1_reg_863                                 |               28 |             64 |         2.29 |
+|  CLK10HZ_BUFG        | p_fpga_test_DW_DelayTs_DSTATE_reg[63]_i_1_n_0                                                              |                                                                         |               21 |             64 |         3.05 |
+|  ap_clk_step_BUFG    | step/inst/ap_NS_fsm16_out                                                                                  | step/inst/fpga_test_DW3_7_0_0_1_reg_872[63]_i_1_n_2                     |               23 |             64 |         2.78 |
+|  ap_clk_step_BUFG    | step/inst/grp_sin_or_cos_float_s_fu_892/ap_CS_fsm_reg[6]_71[0]                                             |                                                                         |               28 |             64 |         2.29 |
+|  ap_clk_step_BUFG    | step/inst/grp_sin_or_cos_float_s_fu_892/ap_CS_fsm_reg[6]_72[0]                                             |                                                                         |               31 |             64 |         2.06 |
+|  CLK10HZ_BUFG        | p_fpga_test_DW_IC_FirstOutputTime_reg[63]_i_1_n_0                                                          |                                                                         |               21 |             64 |         3.05 |
+|  ap_clk_step_BUFG    | step/inst/accum_11_fu_320[63]_i_1_n_2                                                                      |                                                                         |               10 |             64 |         6.40 |
+|  CLK10HZ_BUFG        | p_fpga_test_B_StateSpace_o1_d0_reg[63]_i_1_n_0                                                             |                                                                         |               15 |             64 |         4.27 |
+|  ap_clk_step_BUFG    | step/inst/grp_sin_or_cos_float_s_fu_892/ap_CS_fsm_state2                                                   |                                                                         |               59 |             81 |         1.37 |
+|  ap_clk_step_BUFG    | step/inst/grp_sin_or_cos_float_s_fu_892/ref_4oPi_table_100_U/ref_4oPi_table_100_ce0                        |                                                                         |               28 |             93 |         3.32 |
+|  ap_clk_step_BUFG    | step/inst/grp_sin_or_cos_float_s_fu_892/ap_CS_fsm_reg[6]_70[0]                                             |                                                                         |               43 |             96 |         2.23 |
+|  clk_mac_BUFG        |                                                                                                            |                                                                         |               42 |             98 |         2.33 |
+|  ap_clk_step_BUFG    | step/inst/ap_CS_fsm_state7                                                                                 |                                                                         |               58 |            132 |         2.28 |
+|  CLK10HZ_BUFG        | p_fpga_test_M_reg[519]_i_1_n_0                                                                             |                                                                         |               52 |            192 |         3.69 |
+|  ap_clk_step_BUFG    | step/inst/fpga_test_DW_StateSpace_IWORK_address0[3]                                                        |                                                                         |               54 |            192 |         3.56 |
+|  ap_clk_step_BUFG    | step/inst/grp_sin_or_cos_float_s_fu_892/p_7_2_16_fu_372                                                    |                                                                         |              157 |            384 |         2.45 |
+|  ap_clk_step_BUFG    | step/inst/ap_CS_fsm_state9                                                                                 |                                                                         |              158 |            384 |         2.43 |
+|  CLK10HZ_BUFG        | p_fpga_test_DW_StateSpace_PWORK_reg[831]_i_1_n_0                                                           |                                                                         |              120 |            448 |         3.73 |
++----------------------+------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+----------------+--------------+
+
+

@@ -1,0 +1,8 @@
+verilog xil_defaultlib  \
+"../../../ipstatic/hdl/verilog/fpga_test_step.v" \
+"../../../../fpga_test_step_0_5/sim/fpga_test_step_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

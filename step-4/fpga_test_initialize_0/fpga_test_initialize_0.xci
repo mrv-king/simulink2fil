@@ -1,0 +1,420 @@
+{
+  "schema": "xilinx.com:schema:json_instance:1.0",
+  "ip_inst": {
+    "xci_name": "fpga_test_initialize_0",
+    "component_reference": "xilinx.com:hls:fpga_test_initialize:1.0",
+    "ip_revision": "2113187442",
+    "gen_directory": ".",
+    "parameters": {
+      "component_parameters": {
+        "Component_Name": [ { "value": "fpga_test_initialize_0", "resolve_type": "user", "usage": "all" } ],
+        "clk_period": [ { "value": "50000", "enabled": false, "usage": "all" } ],
+        "machine": [ { "value": "64", "enabled": false, "usage": "all" } ],
+        "combinational": [ { "value": "0", "enabled": false, "usage": "all" } ],
+        "latency": [ { "value": "14", "enabled": false, "usage": "all" } ],
+        "II": [ { "value": "x", "enabled": false, "usage": "all" } ]
+      },
+      "project_parameters": {
+        "ARCHITECTURE": [ { "value": "artix7" } ],
+        "BASE_BOARD_PART": [ { "value": "digilentinc.com:arty-a7-100:part0:1.1" } ],
+        "BOARD_CONNECTIONS": [ { "value": "" } ],
+        "DEVICE": [ { "value": "xc7a100t" } ],
+        "PACKAGE": [ { "value": "csg324" } ],
+        "PREFHDL": [ { "value": "VERILOG" } ],
+        "SILICON_REVISION": [ { "value": "" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "MIXED" } ],
+        "SPEEDGRADE": [ { "value": "-1" } ],
+        "STATIC_POWER": [ { "value": "" } ],
+        "TEMPERATURE_GRADE": [ { "value": "" } ]
+      },
+      "runtime_parameters": {
+        "IPCONTEXT": [ { "value": "IP_Flow" } ],
+        "IPREVISION": [ { "value": "2113187442" } ],
+        "MANAGED": [ { "value": "TRUE" } ],
+        "OUTPUTDIR": [ { "value": "." } ],
+        "SELECTEDSIMMODEL": [ { "value": "" } ],
+        "SHAREDDIR": [ { "value": "." } ],
+        "SWVERSION": [ { "value": "2023.1" } ],
+        "SYNTHESISFLOW": [ { "value": "OUT_OF_CONTEXT" } ]
+      }
+    },
+    "boundary": {
+      "ports": {
+        "p_fpga_test_B_AC_ap_vld": [ { "direction": "out" } ],
+        "p_fpga_test_B_StateSpace_o1_ce0": [ { "direction": "out" } ],
+        "p_fpga_test_B_StateSpace_o1_we0": [ { "direction": "out" } ],
+        "p_fpga_test_B_StateSpace_o1_ce1": [ { "direction": "out" } ],
+        "p_fpga_test_B_StateSpace_o1_we1": [ { "direction": "out" } ],
+        "p_fpga_test_B_StateSpace_o2_ap_vld": [ { "direction": "out" } ],
+        "p_fpga_test_B_DataTypeConversion2_ap_vld": [ { "direction": "out" } ],
+        "p_fpga_test_B_LookUpTable_ap_vld": [ { "direction": "out" } ],
+        "p_fpga_test_B_IC_ap_vld": [ { "direction": "out" } ],
+        "p_fpga_test_B_Derivative_ap_vld": [ { "direction": "out" } ],
+        "p_fpga_test_B_DataTypeConversion1_ap_vld": [ { "direction": "out" } ],
+        "p_fpga_test_DW_DelayTs_DSTATE_ap_vld": [ { "direction": "out" } ],
+        "p_fpga_test_DW_DelayTs_DSTATE_f_ap_vld": [ { "direction": "out" } ],
+        "p_fpga_test_DW_IC_FirstOutputTime_ap_vld": [ { "direction": "out" } ],
+        "p_fpga_test_DW_TimeStampA_ap_vld": [ { "direction": "out" } ],
+        "p_fpga_test_DW_LastUAtTimeA_ap_vld": [ { "direction": "out" } ],
+        "p_fpga_test_DW_TimeStampB_ap_vld": [ { "direction": "out" } ],
+        "p_fpga_test_DW_LastUAtTimeB_ap_vld": [ { "direction": "out" } ],
+        "p_fpga_test_DW_StateSpace_PWORK_ap_vld": [ { "direction": "out" } ],
+        "p_fpga_test_DW_StateSpace_IWORK_ce0": [ { "direction": "out" } ],
+        "p_fpga_test_DW_StateSpace_IWORK_we0": [ { "direction": "out" } ],
+        "p_fpga_test_DW_StateSpace_IWORK_ce1": [ { "direction": "out" } ],
+        "p_fpga_test_DW_StateSpace_IWORK_we1": [ { "direction": "out" } ],
+        "p_fpga_test_DW_u5_Mode_ap_vld": [ { "direction": "out" } ],
+        "p_fpga_test_M_ap_vld": [ { "direction": "out" } ],
+        "ap_clk": [ { "direction": "in" } ],
+        "ap_rst": [ { "direction": "in" } ],
+        "ap_start": [ { "direction": "in" } ],
+        "ap_done": [ { "direction": "out" } ],
+        "ap_idle": [ { "direction": "out" } ],
+        "ap_ready": [ { "direction": "out" } ],
+        "p_fpga_test_B_AC": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "p_fpga_test_B_StateSpace_o1_address0": [ { "direction": "out", "size_left": "0", "size_right": "0" } ],
+        "p_fpga_test_B_StateSpace_o1_d0": [ { "direction": "out", "size_left": "63", "size_right": "0" } ],
+        "p_fpga_test_B_StateSpace_o1_address1": [ { "direction": "out", "size_left": "0", "size_right": "0" } ],
+        "p_fpga_test_B_StateSpace_o1_d1": [ { "direction": "out", "size_left": "63", "size_right": "0" } ],
+        "p_fpga_test_B_StateSpace_o2": [ { "direction": "out", "size_left": "63", "size_right": "0" } ],
+        "p_fpga_test_B_DataTypeConversion2": [ { "direction": "out", "size_left": "63", "size_right": "0" } ],
+        "p_fpga_test_B_LookUpTable": [ { "direction": "out", "size_left": "63", "size_right": "0" } ],
+        "p_fpga_test_B_IC": [ { "direction": "out", "size_left": "63", "size_right": "0" } ],
+        "p_fpga_test_B_Derivative": [ { "direction": "out", "size_left": "63", "size_right": "0" } ],
+        "p_fpga_test_B_DataTypeConversion1": [ { "direction": "out", "size_left": "7", "size_right": "0" } ],
+        "p_fpga_test_DW_DelayTs_DSTATE": [ { "direction": "out", "size_left": "63", "size_right": "0" } ],
+        "p_fpga_test_DW_DelayTs_DSTATE_f": [ { "direction": "out", "size_left": "63", "size_right": "0" } ],
+        "p_fpga_test_DW_IC_FirstOutputTime": [ { "direction": "out", "size_left": "63", "size_right": "0" } ],
+        "p_fpga_test_DW_TimeStampA": [ { "direction": "out", "size_left": "63", "size_right": "0" } ],
+        "p_fpga_test_DW_LastUAtTimeA": [ { "direction": "out", "size_left": "63", "size_right": "0" } ],
+        "p_fpga_test_DW_TimeStampB": [ { "direction": "out", "size_left": "63", "size_right": "0" } ],
+        "p_fpga_test_DW_LastUAtTimeB": [ { "direction": "out", "size_left": "63", "size_right": "0" } ],
+        "p_fpga_test_DW_StateSpace_PWORK": [ { "direction": "out", "size_left": "831", "size_right": "0" } ],
+        "p_fpga_test_DW_StateSpace_IWORK_address0": [ { "direction": "out", "size_left": "3", "size_right": "0" } ],
+        "p_fpga_test_DW_StateSpace_IWORK_d0": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "p_fpga_test_DW_StateSpace_IWORK_address1": [ { "direction": "out", "size_left": "3", "size_right": "0" } ],
+        "p_fpga_test_DW_StateSpace_IWORK_d1": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "p_fpga_test_DW_u5_Mode": [ { "direction": "out", "size_left": "7", "size_right": "0" } ],
+        "p_fpga_test_M": [ { "direction": "out", "size_left": "519", "size_right": "0" } ]
+      },
+      "interfaces": {
+        "ap_clk": {
+          "vlnv": "xilinx.com:signal:clock:1.0",
+          "abstraction_type": "xilinx.com:signal:clock_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "ASSOCIATED_RESET": [ { "value": "ap_rst", "value_src": "constant", "usage": "all" } ],
+            "FREQ_HZ": [ { "value": "100000000", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "FREQ_TOLERANCE_HZ": [ { "value": "0", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "PHASE": [ { "value": "0.0", "resolve_type": "generated", "format": "float", "is_ips_inferred": true, "is_static_object": false } ],
+            "CLK_DOMAIN": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_BUSIF": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_PORT": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "CLK": [ { "physical_name": "ap_clk" } ]
+          }
+        },
+        "ap_rst": {
+          "vlnv": "xilinx.com:signal:reset:1.0",
+          "abstraction_type": "xilinx.com:signal:reset_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "POLARITY": [ { "value": "ACTIVE_HIGH", "value_src": "constant", "usage": "all" } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "RST": [ { "physical_name": "ap_rst" } ]
+          }
+        },
+        "ap_ctrl": {
+          "vlnv": "xilinx.com:interface:acc_handshake:1.0",
+          "abstraction_type": "xilinx.com:interface:acc_handshake_rtl:1.0",
+          "mode": "slave",
+          "port_maps": {
+            "start": [ { "physical_name": "ap_start" } ],
+            "done": [ { "physical_name": "ap_done" } ],
+            "idle": [ { "physical_name": "ap_idle" } ],
+            "ready": [ { "physical_name": "ap_ready" } ]
+          }
+        },
+        "p_fpga_test_B_AC": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "p_fpga_test_B_AC" } ]
+          }
+        },
+        "p_fpga_test_B_StateSpace_o1_address0": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "p_fpga_test_B_StateSpace_o1_address0" } ]
+          }
+        },
+        "p_fpga_test_B_StateSpace_o1_d0": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "p_fpga_test_B_StateSpace_o1_d0" } ]
+          }
+        },
+        "p_fpga_test_B_StateSpace_o1_address1": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "p_fpga_test_B_StateSpace_o1_address1" } ]
+          }
+        },
+        "p_fpga_test_B_StateSpace_o1_d1": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "p_fpga_test_B_StateSpace_o1_d1" } ]
+          }
+        },
+        "p_fpga_test_B_StateSpace_o2": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "p_fpga_test_B_StateSpace_o2" } ]
+          }
+        },
+        "p_fpga_test_B_DataTypeConversion2": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "p_fpga_test_B_DataTypeConversion2" } ]
+          }
+        },
+        "p_fpga_test_B_LookUpTable": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "p_fpga_test_B_LookUpTable" } ]
+          }
+        },
+        "p_fpga_test_B_IC": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "p_fpga_test_B_IC" } ]
+          }
+        },
+        "p_fpga_test_B_Derivative": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "p_fpga_test_B_Derivative" } ]
+          }
+        },
+        "p_fpga_test_B_DataTypeConversion1": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "p_fpga_test_B_DataTypeConversion1" } ]
+          }
+        },
+        "p_fpga_test_DW_DelayTs_DSTATE": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "p_fpga_test_DW_DelayTs_DSTATE" } ]
+          }
+        },
+        "p_fpga_test_DW_DelayTs_DSTATE_f": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "p_fpga_test_DW_DelayTs_DSTATE_f" } ]
+          }
+        },
+        "p_fpga_test_DW_IC_FirstOutputTime": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "p_fpga_test_DW_IC_FirstOutputTime" } ]
+          }
+        },
+        "p_fpga_test_DW_TimeStampA": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "p_fpga_test_DW_TimeStampA" } ]
+          }
+        },
+        "p_fpga_test_DW_LastUAtTimeA": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "p_fpga_test_DW_LastUAtTimeA" } ]
+          }
+        },
+        "p_fpga_test_DW_TimeStampB": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "p_fpga_test_DW_TimeStampB" } ]
+          }
+        },
+        "p_fpga_test_DW_LastUAtTimeB": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "p_fpga_test_DW_LastUAtTimeB" } ]
+          }
+        },
+        "p_fpga_test_DW_StateSpace_PWORK": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "p_fpga_test_DW_StateSpace_PWORK" } ]
+          }
+        },
+        "p_fpga_test_DW_StateSpace_IWORK_address0": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "p_fpga_test_DW_StateSpace_IWORK_address0" } ]
+          }
+        },
+        "p_fpga_test_DW_StateSpace_IWORK_d0": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "p_fpga_test_DW_StateSpace_IWORK_d0" } ]
+          }
+        },
+        "p_fpga_test_DW_StateSpace_IWORK_address1": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "p_fpga_test_DW_StateSpace_IWORK_address1" } ]
+          }
+        },
+        "p_fpga_test_DW_StateSpace_IWORK_d1": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "p_fpga_test_DW_StateSpace_IWORK_d1" } ]
+          }
+        },
+        "p_fpga_test_DW_u5_Mode": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "p_fpga_test_DW_u5_Mode" } ]
+          }
+        },
+        "p_fpga_test_M": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "undef", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "p_fpga_test_M" } ]
+          }
+        }
+      }
+    }
+  }
+}

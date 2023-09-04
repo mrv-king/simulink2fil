@@ -1,0 +1,17 @@
+transcript off
+onbreak {quit -force}
+onerror {quit -force}
+transcript on
+
+vlib work
+vmap -link {C:/Users/nikgal/Vivado/fpga_in_the_loop/fpga_in_the_loop.cache/compile_simlib/activehdl}
+vlib activehdl/xil_defaultlib
+
+vlog -work xil_defaultlib  -v2k5 -l xil_defaultlib \
+"../../../ipstatic/hdl/verilog/fpga_test_initialize.v" \
+"../../../../fpga_test_initialize_0_1/sim/fpga_test_initialize_0.v" \
+
+
+vlog -work xil_defaultlib \
+"glbl.v"
+
